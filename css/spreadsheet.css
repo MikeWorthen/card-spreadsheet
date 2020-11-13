@@ -50,9 +50,10 @@ input {
     margin:20px 0;
   }
   
-  .container{
+
+  .cardList{
     width:90%;
-    margin:auto;
+    margin-bottom: 100px;
   }
   
   table{
