@@ -31,13 +31,11 @@ a{
 }
 
 .jumbotron-fluid{
-    background:linear-gradient(0deg,rgba(255, 255, 255, 0.767),rgba(255, 255, 255, 0.788)),url(images/calc.jpg);
-    background: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: fit-content;
     font-size: larger;
     color: black;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .display-4{
