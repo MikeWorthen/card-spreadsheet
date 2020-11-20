@@ -13,19 +13,51 @@
   <body>
     
 
-    <div class="jumbotron jumbotron-fluid">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <h1 class="display-3">Fluid jumbo heading</h1>
-        <p class="lead">Jumbo helper text</p>
-        <hr class="my-2">
-        <p>More info</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-        </p>
+          <a class="navbar-brand" href="/">Card Collect</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+          </div>
       </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Card Collect Spreadsheets</h1>
+        <br>
+        <p>On this page you will be able to create your own spreadsheets to track your Card sets and keep track of your investments/sales of cards.</p>
+        <a class="btn btn-lg btn-primary" href="/sheets" role="button">Base Set</a>
+        <a class="btn btn-lg btn-primary" href="/sheets" role="button">Jungle</a>
+        <a class="btn btn-lg btn-primary" href="/sheets" role="button">Fossil</a>
+        <div><img src="charizard.png"  height="400px" alt="charizard"></div>
     </div>
+</div>
 
+<img id="myImg" src="charizard.png" alt="Snow" style="width:100%;max-width:300px">
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 
 
     <div class="container">
@@ -38,6 +70,7 @@
             <th class="blue">Set No.</th>
             <th class="blue">Name</th>
             <th class="blue">Rarity</th>
+            <th class="blue">Card Image</th>
         </tr>
     </thead>
     <tbody id="resultsBody">

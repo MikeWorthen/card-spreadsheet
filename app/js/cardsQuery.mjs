@@ -16,7 +16,8 @@ axios
             let targetResult = {
                 number: parseFloat(pokemon[i].number),
                 name: pokemon[i].name,
-                rarity: pokemon[i].rarity
+                rarity: pokemon[i].rarity,
+                imageUrl: pokemon[i].imageUrlHiRes
             }
 
             newResult.push(targetResult);
@@ -28,36 +29,51 @@ axios
         newResult.sort((a, b) => (a.number) > (b.number) ? 1 : -1);
         for (let j = 0; j < newResult.length; j++) {
 
-            let number = newResult[j].number
-            let name = newResult[j].name
-            let rarity = newResult[j].rarity
+            let number = newResult[j].number;
+            let name = newResult[j].name;
+            let rarity = newResult[j].rarity;
+            let imageUrl = newResult[j].imageUrl;
+            let placeHolder = "Img";
 
 
             let tr = document.createElement('tr');
             let tdNumber = document.createElement('td');
             let tdName = document.createElement('td');
             let tdRarity = document.createElement('td');
+            let tdImage = document.createElement('td');
+            let imageLink = document.createElement('a');
+        
+            // add the image url to the href of the image field 
+            imageLink.setAttribute('href', imageUrl);
+            console.log(tdImage);
 
-            tr.classList.add('tableRow')
-            tdNumber.classList.add('tableData')
-            tdName.classList.add('tableData')
-            tdRarity.classList.add('tableData')
+            tr.classList.add('tableRow');
+            tdNumber.classList.add('tableData');
+            tdName.classList.add('tableData');
+            tdRarity.classList.add('tableData');
+            tdImage.classList.add('tableData');
+            imageLink.classList.add('imageLink');
 
-            tdNumber.innerHTML = number
-            tdName.innerText = name
-            tdRarity.innerText = rarity
+            tdNumber.innerHTML = number;
+            tdName.innerText = name;
+            tdRarity.innerText = rarity;
+            imageLink.innerText = placeHolder;
 
-            tr.appendChild(tdNumber)
-            tr.appendChild(tdName)
-            tr.appendChild(tdRarity)
+            tr.appendChild(tdNumber);
+            tr.appendChild(tdName);
+            tr.appendChild(tdRarity);
+            tr.appendChild(tdImage);
+            tdImage.appendChild(imageLink);
 
 
 
-            document.getElementById('resultsBody').append(tr)
+            document.getElementById('resultsBody').append(tr);
 
         }
 
     });
+
+
 
     //Header scrolling functionality 
 ; (function ($) {
@@ -100,3 +116,24 @@ $(document).ready(function () {
         }, 2000);
     });
 });
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
