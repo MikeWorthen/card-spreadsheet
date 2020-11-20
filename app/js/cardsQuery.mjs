@@ -42,6 +42,7 @@ axios
             let tdName = document.createElement('td');
             let tdRarity = document.createElement('td');
             let tdImage = document.createElement('td');
+            let imageLink = document.createElement('a');
 
             // Modal Elements
             let modalDiv = document.createElement('BUTTON');
@@ -51,9 +52,13 @@ axios
             let modalHeader = document.createElement('div');
             let modalClose = document.createElement('BUTTON');
             let modalBody = document.createElement('div');
+        
             
             // add the image url to the href of the image field 
-            // imageLink.setAttribute('href', imageUrl);
+            imageLink.classList.add('imageLink');
+            imageLink.setAttribute('href', imageUrl);
+            imageLink.dataset.toggle = 'modal';
+            imageLink.dataset.target = "#myModal";
             // modalDiv.setAttribute('href', imageUrl);
 
             // setting attributes to modal elements
@@ -87,7 +92,8 @@ axios
             tdNumber.innerHTML = number;
             tdName.innerText = name;
             tdRarity.innerText = rarity;
-            modalDiv.innerText = placeHolder;
+            imageLink.innerText = placeHolder;
+            // modalDiv.innerText = placeHolder;
             modalClose.innerHTML = closeX;
 
            
@@ -96,7 +102,8 @@ axios
             tr.appendChild(tdName);
             tr.appendChild(tdRarity);
             tr.appendChild(tdImage);
-            tdImage.appendChild(modalDiv);
+            tdImage.appendChild(imageLink);
+            // tdImage.appendChild(modalDiv);
             tdImage.appendChild(modal);
             modal.appendChild(modalDialog);
             modalDialog.appendChild(modalContent);
