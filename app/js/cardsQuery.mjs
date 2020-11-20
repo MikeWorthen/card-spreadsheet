@@ -34,6 +34,7 @@ axios
             let rarity = newResult[j].rarity;
             let imageUrl = newResult[j].imageUrl;
             let placeHolder = "Img";
+            let closeX = "&times;";
 
             // create elements for HTML
             let tr = document.createElement('tr');
@@ -41,44 +42,68 @@ axios
             let tdName = document.createElement('td');
             let tdRarity = document.createElement('td');
             let tdImage = document.createElement('td');
-            let imageLink = document.createElement('a');
-            let modalDiv = document.createElement('div');
-            let modalClose = document.createElement('span');
-            let modalImage = document.createElement('img');
 
-        
+            // Modal Elements
+            let modalDiv = document.createElement('BUTTON');
+            let modal = document.createElement('div');
+            let modalDialog = document.createElement('div');
+            let modalContent = document.createElement('div');
+            let modalHeader = document.createElement('div');
+            let modalClose = document.createElement('BUTTON');
+            let modalBody = document.createElement('div');
+            
             // add the image url to the href of the image field 
-            imageLink.setAttribute('href', imageUrl);
-            modalImage.setAttribute('href', imageUrl);
+            // imageLink.setAttribute('href', imageUrl);
+            // modalDiv.setAttribute('href', imageUrl);
 
+            // setting attributes to modal elements
+            modalDiv.dataset.target = "#myModal";
+            modalDiv.dataset.toggle = "modal";
+            modal.setAttribute('role', "dialog");
+            modalClose.setAttribute('type', "button")
+            modalClose.setAttribute('data-dismiss', "modal");
+            
+        
             // add class to created elements
             tr.classList.add('tableRow');
             tdNumber.classList.add('tableData');
             tdName.classList.add('tableData');
             tdRarity.classList.add('tableData');
             tdImage.classList.add('tableData');
-            imageLink.classList.add('imageLink');
+
+
+            // Adding classes to the Modal elements
             modalDiv.classList.add('modalDiv');
-            modalClose.classList.add('modalClose'); 
-            modalImage.classList.add('modalImage');
+            modalContent.classList.add('modal-content');
+            modal.id = "myModal";
+            modal.classList.add('modal', 'fade');
+            modalDialog.classList.add('modal-dialog', 'modal-sm');
+            modalHeader.classList.add('modal-header');           
+            modalClose.classList.add('close');
+            modalBody.classList.add('modal-body');
+
 
             // populate created elements with api data
             tdNumber.innerHTML = number;
             tdName.innerText = name;
             tdRarity.innerText = rarity;
-            imageLink.innerText = placeHolder;
+            modalDiv.innerText = placeHolder;
+            modalClose.innerHTML = closeX;
 
+           
             // append elements where needed            
             tr.appendChild(tdNumber);
             tr.appendChild(tdName);
             tr.appendChild(tdRarity);
             tr.appendChild(tdImage);
-            tdImage.appendChild(imageLink);
-            document.getElementById('resultsTable').appendChild(modalDiv);
-            modalDiv.appendChild(modalClose);
-            modalDiv.appendChild(modalImage);
-
-
+            tdImage.appendChild(modalDiv);
+            tdImage.appendChild(modal);
+            modal.appendChild(modalDialog);
+            modalDialog.appendChild(modalContent);
+            modalContent.appendChild(modalHeader);
+            modalHeader.appendChild(modalClose);
+            modalContent.appendChild(modalBody);
+            
 
             document.getElementById('resultsBody').append(tr);
 
