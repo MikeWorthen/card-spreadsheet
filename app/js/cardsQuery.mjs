@@ -35,34 +35,48 @@ axios
             let imageUrl = newResult[j].imageUrl;
             let placeHolder = "Img";
 
-
+            // create elements for HTML
             let tr = document.createElement('tr');
             let tdNumber = document.createElement('td');
             let tdName = document.createElement('td');
             let tdRarity = document.createElement('td');
             let tdImage = document.createElement('td');
             let imageLink = document.createElement('a');
+            let modalDiv = document.createElement('div');
+            let modalClose = document.createElement('span');
+            let modalImage = document.createElement('img');
+
         
             // add the image url to the href of the image field 
             imageLink.setAttribute('href', imageUrl);
+            modalImage.setAttribute('href', imageUrl);
 
+            // add class to created elements
             tr.classList.add('tableRow');
             tdNumber.classList.add('tableData');
             tdName.classList.add('tableData');
             tdRarity.classList.add('tableData');
             tdImage.classList.add('tableData');
             imageLink.classList.add('imageLink');
+            modalDiv.classList.add('modalDiv');
+            modalClose.classList.add('modalClose'); 
+            modalImage.classList.add('modalImage');
 
+            // populate created elements with api data
             tdNumber.innerHTML = number;
             tdName.innerText = name;
             tdRarity.innerText = rarity;
             imageLink.innerText = placeHolder;
 
+            // append elements where needed            
             tr.appendChild(tdNumber);
             tr.appendChild(tdName);
             tr.appendChild(tdRarity);
             tr.appendChild(tdImage);
             tdImage.appendChild(imageLink);
+            document.getElementById('resultsTable').appendChild(modalDiv);
+            modalDiv.appendChild(modalClose);
+            modalDiv.appendChild(modalImage);
 
 
 
