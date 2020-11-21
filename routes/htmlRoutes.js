@@ -16,14 +16,9 @@ module.exports = function(app) {
     app.get("/", function(req, res) {
       res.sendFile(path.join(__dirname, "../app/html/index.html"));
     });
-    app.get("/sheets", function(req, res) {
-      res.sendFile(path.join(__dirname, "../app/html/spreadsheet.html"));
-    });
-
-
-
+    
     // dummy route
-    app.get("/test", function(req, res) {
+    app.get("/sheets", function(req, res) {
       res.sendFile(path.join(__dirname, "../app/html/cardSearch.html"));
     });
   };

@@ -10,6 +10,20 @@
     padding: 0;
 }
 
+body{
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'Merriweather', sans-serif;
+  line-height: 1.6;
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;  
+  background: whitesmoke;
+}
+
+ h1, h2, h3, h4, h5, h6{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+ }
+
 .table-container{
     margin-top:125px;
     margin-bottom: 125px;
@@ -57,6 +71,10 @@ input {
     text-align: center;
     margin-bottom: 5rem;
 }
+
+  .charzDiv{
+    margin-top: 3rem;
+}
   
 
   .cardList{
@@ -68,14 +86,28 @@ input {
     border-collapse:collapse;
     width:100%;
   }
-  
+
+  #resultsTable{
+    border:1px solid #333;
+    margin-bottom: 5rem;
+  }
+ 
   .blue{
-    border:2px solid #1ABC9C;
+    font-size: 18px;
+    background-color: #007bff;
+    margin-bottom: 5rem;
+  }
+
+  .pokeInfo{
+    
   }
   
   .blue thead{
-    background:#1ABC9C;
+
+    background:#007bff;
   }
+
+
   
   .purple{
     border:2px solid #9B59B6;
@@ -118,6 +150,32 @@ input {
   .up{
     cursor:pointer;
   }
+
+
+
+
+  /* modal style */
+  .modalImg{
+    height: 700px
+  }
+  
+  .modal-content{
+    background-color: transparent;
+  }
+
+  .modal-dialog{
+    background-color: transparent;
+  }
+
+  button.close{
+    background-color: black;
+    color: white;
+  }
+  button.close:hover{
+    background-color: black;
+    color: rgba(245, 245, 245, 0.678);
+  }
+
 
 
 
@@ -215,6 +273,15 @@ input {
     }
     .section-footer {
         padding: 2rem 0 ;
+    }
+
+    .charzImg{
+      width: 250px;
+      height: 250px;
+    }
+
+    .modalImg{
+      height: 500px;
     }
 
     .section-footer .container{
