@@ -38,6 +38,10 @@ a{
     margin-bottom: 0;
 }
 
+.charzDiv{
+    margin-top: 3rem;
+}
+
 .display-4{
     color: darkgreen;
 }
@@ -138,6 +142,11 @@ a{
     .section-footer {
         padding: 2rem 0 ;
     }
+
+    .charzImg{
+        width: 250px;
+        height: 250px;
+      }
 
     .section-footer .container{
         grid-template-columns: 1fr;
