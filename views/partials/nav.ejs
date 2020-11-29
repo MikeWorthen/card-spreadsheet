@@ -24,10 +24,14 @@
                     <li class="nav-item active">
                       <a class="nav-link" href="/users/logout"><span class="fas fa-user"></span> Sign Out</a>
                     </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="/users/login"><span class="fas fa-sign-in-alt"></span> Hi <%= user.name %></a>
-                    </li>
-                  </ul>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link" href="#"><span class="fas fa-sign-in-alt"></span> Hi <%= user.name %></a>
+                        <div class="dropdown-content">
+                          <a href="#">Account Settings</a>
+                          <a href="/users/logout">Sign Out</a>
+                        </div>
+                      </li>
+                    </ul>
             </div>
         </nav>
     </div>
