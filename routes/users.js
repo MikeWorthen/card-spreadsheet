@@ -76,10 +76,11 @@ router.post('/register', (req, res) => {
   }
 });
 
-// Login
+// Login (the successRedirect is where the page will redirect to after successful login)
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', {
-    successRedirect: '/dashboard',
+    // successRedirect: '/dashboard',
+    successRedirect: '/',
     failureRedirect: '/users/login',
     failureFlash: true
   })(req, res, next);

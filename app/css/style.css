@@ -30,6 +30,15 @@ a{
     text-decoration: none;
 }
 
+  /* Scrolling Table */
+  h1{
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:-2px;
+    font-size:2.5em;
+    margin:20px 0;
+  }
+
 .jumbotron-fluid{
     height: fit-content;
     font-size: larger;
@@ -38,10 +47,9 @@ a{
     margin-bottom: 0;
 }
 
-.display-4{
-    color: darkgreen;
+.charzDiv{
+    margin-top: 3rem;
 }
-
 
 /* Footer */
 
@@ -138,6 +146,11 @@ a{
     .section-footer {
         padding: 2rem 0 ;
     }
+
+    .charzImg{
+        width: 250px;
+        height: 250px;
+      }
 
     .section-footer .container{
         grid-template-columns: 1fr;

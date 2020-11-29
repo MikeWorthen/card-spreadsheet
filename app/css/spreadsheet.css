@@ -24,6 +24,7 @@ body{
   text-transform: uppercase;
  }
 
+
 .table-container{
     margin-top:125px;
     margin-bottom: 125px;
@@ -97,18 +98,12 @@ input {
     background-color: #007bff;
     margin-bottom: 5rem;
   }
-
-  .pokeInfo{
-    
-  }
   
   .blue thead{
 
     background:#007bff;
   }
 
-
-  
   .purple{
     border:2px solid #9B59B6;
   }
