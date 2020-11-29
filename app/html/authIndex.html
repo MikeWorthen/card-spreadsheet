@@ -20,6 +20,24 @@
 <body>
 
     <!-- Optional JavaScript -->
+    <script>
+
+
+        const req = new XMLHttpRequest();
+        req.onreadystatechange = function () {
+          if (req.readyState == 4 && req.status == 200) {
+            const user = JSON.parse(req.response).user;
+            console.log(user)
+            document.getElementById("welcome-message").innerText = `Welcome ${user.name}!!`;
+          }
+        };
+        req.open("GET", "http://localhost:5000/home", true);
+        req.send();
+    
+        </script>
+
+
+
 
     <script src="https://kit.fontawesome.com/adb19d7eeb.js" crossorigin="anonymous"></script>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
@@ -71,6 +89,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Card Collect Spreadsheets</h1>
+            <div id="welcome-message"></div>
             <br>
             <p>On this page you will be able to create your own spreadsheets to track your Card sets and keep track of your investments/sales of cards.</p>
             <a class="btn btn-lg btn-primary" href="/sheets" role="button">Base Set</a>
@@ -123,8 +142,8 @@
         </div>
     </footer>
     <!-- add external JS -->
+   
 
-    <script src="test.js"></script>
 </body>
 
 </html>
