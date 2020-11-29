@@ -19,26 +19,6 @@
 
 <body>
 
-    <!-- Optional JavaScript -->
-    <script>
-
-
-        const req = new XMLHttpRequest();
-        req.onreadystatechange = function () {
-          if (req.readyState == 4 && req.status == 200) {
-            const user = JSON.parse(req.response).user;
-            console.log(user)
-            document.getElementById("welcome-message").innerText = `Welcome ${user.name}!!`;
-          }
-        };
-        req.open("GET", "http://localhost:5000/home", true);
-        req.send();
-    
-        </script>
-
-
-
-
     <script src="https://kit.fontawesome.com/adb19d7eeb.js" crossorigin="anonymous"></script>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
           <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -141,8 +121,8 @@
             </div>
         </div>
     </footer>
-    <!-- add external JS -->
-   
+
+    <!-- Optional JavaScript -->
 
 </body>
 
