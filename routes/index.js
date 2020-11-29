@@ -12,5 +12,10 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   })
 );
 
+// router.get('/', (req, res) =>
+//   res.render('', {
+//     user: req.user
+//   })
+// );
 
 module.exports = router;
