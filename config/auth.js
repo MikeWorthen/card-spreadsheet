@@ -10,6 +10,6 @@ module.exports = {
       if (!req.isAuthenticated()) {
         return next();
       }
-      res.redirect('/authIndex');      
+      res.redirect('/home');      
     }
   };

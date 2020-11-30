@@ -6,16 +6,16 @@ const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 router.get('/welcome', forwardAuthenticated, (req, res) => res.render('welcome'));
 
 // Dashboard
-router.get('/authIndex', ensureAuthenticated, (req, res) =>
+router.get('/home', ensureAuthenticated, (req, res) =>
   res.render('authIndex', {
     user: req.user
   })
 );
 
-// router.get('/', (req, res) =>
-//   res.render('', {
-//     user: req.user
-//   })
-// );
+router.get('/cardSearch', ensureAuthenticated, (req, res) =>
+  res.render('cardSearch', {
+    user: req.user
+  })
+);
 
 module.exports = router;
