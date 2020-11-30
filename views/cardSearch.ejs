@@ -5,12 +5,15 @@
 <% include ./partials/head %>
 
 <!-- External CSS -->
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="spreadsheet.css">
 
 <body>
     
     <!-- Navbar -->
     <% include ./partials/nav %>
+
+
+    <!-- Jumbotron -->
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -20,9 +23,28 @@
             <a class="btn btn-lg btn-primary" href="/cardSearch" role="button">Base Set</a>
             <a class="btn btn-lg btn-primary" href="/cardSearch" role="button">Jungle</a>
             <a class="btn btn-lg btn-primary" href="/cardSearch" role="button">Fossil</a>
-            <div class="charzDiv"><img class="charzImg"src="charizard.png"  height="400px" alt="charizard"></div>
+            <div class="charzDiv"><img class="charzImg" src="charizard.png"  height="400px" alt="charizard"></div>
         </div>
     </div>
+    
+        <!-- Sheet -->
+        <div class="container">
+          <div id="target"></div>  
+        </div>
+    
+        <table class="" id="resultsTable">
+          <thead class="">
+            <tr class="blue">
+                <th class="pokeInfo">Set No.</th>
+                <th class="pokeInfo">Name</th>
+                <th class="pokeInfo">Rarity</th>
+                <th class="pokeInfo">Card Image</th>
+            </tr>
+        </thead>
+        <tbody id="resultsBody">
+    
+        </tbody>
+        </table>
 
     <!-- Footer -->
     <% include ./partials/footer %>
@@ -30,6 +52,8 @@
 
     <!-- Optional JavaScript -->
     <% include ./partials/scripts %>
+    <script type="module" src="cardsQuery.mjs"></script>
+
 </body>
 
 </html>

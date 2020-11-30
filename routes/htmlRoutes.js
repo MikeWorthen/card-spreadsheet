@@ -18,13 +18,13 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../app/html/index.html"));
   });
 
-  app.get("/home", ensureAuthenticated, function (req, res) {
-    res.sendFile(path.join(__dirname, "../app/html/authIndex.html"));
-    console.log(req.user)
-  });
+  // app.get("/home", ensureAuthenticated, function (req, res) {
+  //   res.sendFile(path.join(__dirname, "../app/html/authIndex.html"));
+  //   console.log(req.user)
+  // });
 
-  // dummy route
-  app.get("/sheets", function (req, res) {
+  // Guest User Spreadsheets
+  app.get("/guestSearch", function (req, res) {
     res.sendFile(path.join(__dirname, "../app/html/cardSearch.html"));
   });
 
