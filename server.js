@@ -90,7 +90,7 @@ require("./routes/htmlRoutes")(app);
 // require("./routes/users")(app)
 
 // app.use(express.static(__dirname + "/dist/html"));
-app.use(express.static(__dirname + "/app/CSS"));
+app.use(express.static(__dirname + "/app/css"));
 app.use(express.static(__dirname + "/app/js"));
 app.use(express.static(__dirname + "/app/images"));
 
