@@ -1,7 +1,29 @@
+:root{
+    --primary-color: #333;
+    --secondary-color: #444;
+    --overlay-color: rgba(0, 0, 0, 0.582);
+}
+
+body{
+    font-family: 'Merriweather', sans-serif;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;  
+    background: whitesmoke;
+  }
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+   }
+
 .section-footer{
     background: var(--primary-color);
     color: #fff;
     padding: 4rem 0;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
 }
 
 .section-footer .container{
