@@ -26,6 +26,7 @@ axios
 
         // console.log(newResult.sort((a, b) => (a.number) > (b.number) ? 1 : -1));
         let modalCount = 0
+        let boxCount = 0
         newResult.sort((a, b) => (a.number) > (b.number) ? 1 : -1);
         for (let j = 0; j < newResult.length; j++) {
 
@@ -35,15 +36,19 @@ axios
             let imageUrl = newResult[j].imageUrl;
             let placeHolder = "View";
             let closeX = "&times;";
-            modalCount++
-            
+            modalCount++;
+            boxCount++
 
-            // create elements for HTML
+
+            // Table Elements
+            let checkbox = document.createElement('input');
+            let boxDiv = document.createElement('div');
             let tr = document.createElement('tr');
             let tdNumber = document.createElement('td');
             let tdName = document.createElement('td');
             let tdRarity = document.createElement('td');
             let tdImage = document.createElement('td');
+
 
             // Modal Elements
             let modalDiv = document.createElement('BUTTON');
@@ -53,11 +58,12 @@ axios
             let modalClose = document.createElement('BUTTON');
             let modalBody = document.createElement('div');
             let modalImg = document.createElement('img');
+
         
-            
             // add the image url to the href of the image field 
             modalDiv.setAttribute('href', imageUrl);
 
+            
             // setting attributes to modal elements
             modalDiv.dataset.target = "#myModal"+ modalCount;
             modalDiv.dataset.toggle = "modal";
@@ -66,25 +72,30 @@ axios
             modalClose.setAttribute('data-dismiss', "modal");
             modalImg.setAttribute('src', imageUrl);
             
+
+            // setting attributes to checkbox elements
+            checkbox.setAttribute('type', "checkbox");
+            checkbox.dataset.target = "#box"+ boxCount;
+
             
-        
             // add class to created elements
+            boxDiv.classList.add('boxDiv');
+            checkbox.classList.add('tableBox');
             tr.classList.add('tableRow');
             tdNumber.classList.add('tableData');
             tdName.classList.add('tableData');
             tdRarity.classList.add('tableData');
             tdImage.classList.add('tableData');
-            modalImg.classList.add('modalImg');
-
+            
 
             // Adding classes to the Modal elements
             modalDiv.classList.add('modalDiv', 'btn', 'btn-sm','btn-primary');
             modalContent.classList.add('modal-content');
             modal.id = "myModal"+ modalCount;
             modal.classList.add('modal', 'fade');
+            modalImg.classList.add('modalImg');
             modalDialog.classList.add('modal-dialog', 'modal-md');          
             modalClose.classList.add('close');
-
 
 
             // populate created elements with api data
@@ -96,18 +107,23 @@ axios
 
            
             // append elements where needed            
+            tr.appendChild(boxDiv);
+            boxDiv.appendChild(checkbox);
+            // tr.appendChild(checkbox);
             tr.appendChild(tdNumber);
             tr.appendChild(tdName);
             tr.appendChild(tdRarity);
             tr.appendChild(tdImage);
+            
             tdImage.appendChild(modalDiv);
             tdImage.appendChild(modal);
             modal.appendChild(modalDialog);
             modalDialog.appendChild(modalContent);
             modalContent.appendChild(modalClose);
             modalContent.appendChild(modalImg);
-            
 
+
+            
             document.getElementById('resultsBody').append(tr);
 
         }
