@@ -30,6 +30,28 @@ body{
     margin-bottom: 125px;
 }
 
+#collection{
+  border: 2px solid black;
+  padding: 1rem;
+  margin-bottom: 15px;
+}
+
+.collectCount{
+  text-align: center;
+}
+
+.checks{
+  float: left;
+  vertical-align: middle;
+}
+
+.collectionBox{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 .card-table{
     border-collapse:separate; 
     border-spacing:0 15px;
@@ -43,6 +65,17 @@ th, td{
     width:50px; 
     padding:5px;
     border:1px solid black;    
+}
+
+.boxDiv{
+  text-align: center;
+  padding: 5px 0;
+}
+
+.tableBox{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
 
 #set-num{
