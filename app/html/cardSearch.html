@@ -63,13 +63,8 @@
     <div class="container">
       <div id="target"></div>  
       <div id="collection">
-        
-        <!-- <button type="button" class="btn btn-outline-primary checks">Uncheck All</button> -->
-        <!-- <div class="collectCount">Collection Count: 0 of 102 <span><button type="button" class="btn btn-primary btn-sm checks">Check All</button></span></div> -->
-        <div class="checks"><input type="checkbox" class="collectionBox">Check All</div>
+        <div  class="checks"><input id="checkAll" type="checkbox" onClick="toggle(this);" value="Select All" class="collectionBox">Check All</div>
         <div class="collectCount">Collection Count: 0 of 102</div> 
-        <!-- <span class="checks"> Uncheck All <input type="checkbox" class="collectionBox"></span>
-        <span class="checks"> Check All <input type="checkbox" class="collectionBox"></span>   -->
       </div>
     </div>
 
@@ -133,6 +128,16 @@
 
     <!-- Optional JavaScript -->
             <!-- Optional JavaScript -->
+
+            <script>
+              function toggle(checkbox) {
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                for (var i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i] != checkbox)
+                        checkboxes[i].checked = checkbox.checked;
+                }
+            }
+            </script>
 
             <script type="module" src="cardsQuery.mjs"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

@@ -64,7 +64,7 @@ thead{
 th, td{
     width:50px; 
     padding:5px;
-    border:1px solid black;    
+    /* border:1px solid black;     */
 }
 
 .boxDiv{
@@ -79,7 +79,7 @@ th, td{
 }
 
 #set-num{
-    width: 50px;
+  width: 50px;
 }
 
 input {
@@ -155,11 +155,11 @@ input {
   }
   
   tbody tr:nth-child(even){
-    background:#ECF0F1;
+    background:rgb(231, 231, 231);
   }
   
   tbody tr:hover{
-  background:#BDC3C7;
+    background:#BDC3C7;
     color:#FFFFFF;
   }
   

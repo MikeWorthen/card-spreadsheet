@@ -63,7 +63,7 @@ axios
             // add the image url to the href of the image field 
             modalDiv.setAttribute('href', imageUrl);
 
-            
+
             // setting attributes to modal elements
             modalDiv.dataset.target = "#myModal"+ modalCount;
             modalDiv.dataset.toggle = "modal";
@@ -75,6 +75,8 @@ axios
 
             // setting attributes to checkbox elements
             checkbox.setAttribute('type', "checkbox");
+            checkbox.setAttribute('name', "checked");
+            checkbox.setAttribute('id', "check");
             checkbox.dataset.target = "#box"+ boxCount;
 
             
@@ -130,11 +132,9 @@ axios
 
     });
 
-
-
-    //Header scrolling functionality 
-; (function ($) {
-    $.fn.fixMe = function () {
+    // Header scrolling functionality 
+     (function ($) {
+        $.fn.fixMe = function () {
         return this.each(function () {
             var $this = $(this),
                 $t_fixed;
@@ -173,3 +173,5 @@ $(document).ready(function () {
         }, 2000);
     });
 });
+
+
