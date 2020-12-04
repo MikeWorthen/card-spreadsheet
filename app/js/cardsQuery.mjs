@@ -1,6 +1,28 @@
 
-let queryURL = "https://api.pokemontcg.io/v1/cards?pageSize=300&setCode=base1"
 
+
+let buttVal = document.grt('base1');
+
+loadElist()
+
+function loadElist(){
+    buttVal.addEventListener("click", record);
+}
+
+
+
+function record(){
+    console.log('ive been clicked')
+}
+
+let queryURL = "https://api.pokemontcg.io/v1/cards?pageSize=300&setCode="+buttVal;
+console.log(queryURL)
+
+
+
+// let buttVal = document.getElementById('btn1').value
+// let queryURL = "https://api.pokemontcg.io/v1/cards?pageSize=300&setCode="+buttVal;
+// console.log(queryURL)
 axios
     .get(queryURL)
     .then(function (response) {
@@ -10,15 +32,20 @@ axios
         // Loop through results, get data we want and push to new array
         for (let i = 0; i < pokemon.length; i++) {
 
-            let results = [pokemon[i]]
+            // let results = [pokemon[i]]
 
-
-            let targetResult = {
-                number: parseFloat(pokemon[i].number),
+            // takes out any letters from a string - allowing for the follwoing parseFloat
+           let noLetterResult = {
+               noLetter: pokemon[i].number.replace(/\D/g,'')
+           }
+           
+           let targetResult = {
+                number: parseFloat(noLetterResult.noLetter),
+                letterNumber: pokemon[i].number,
                 name: pokemon[i].name,
                 rarity: pokemon[i].rarity,
                 imageUrl: pokemon[i].imageUrlHiRes
-            }
+           }
 
             newResult.push(targetResult);
 
@@ -27,10 +54,13 @@ axios
         // console.log(newResult.sort((a, b) => (a.number) > (b.number) ? 1 : -1));
         let modalCount = 0
         let boxCount = 0
+
+        
         newResult.sort((a, b) => (a.number) > (b.number) ? 1 : -1);
         for (let j = 0; j < newResult.length; j++) {
 
             let number = newResult[j].number;
+            let number2 = newResult[j].letterNumber;
             let name = newResult[j].name;
             let rarity = newResult[j].rarity;
             let imageUrl = newResult[j].imageUrl;
@@ -38,6 +68,7 @@ axios
             let closeX = "&times;";
             modalCount++;
             boxCount++
+            
 
 
             // Table Elements
@@ -101,7 +132,7 @@ axios
 
 
             // populate created elements with api data
-            tdNumber.innerHTML = number;
+            tdNumber.innerHTML = number2;
             tdName.innerText = name;
             tdRarity.innerText = rarity;
             modalDiv.innerText = placeHolder;
@@ -129,6 +160,7 @@ axios
             document.getElementById('resultsBody').append(tr);
 
         }
+        console.log(newResult)
 
     });
 
