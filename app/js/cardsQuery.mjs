@@ -1,21 +1,31 @@
+// let buttVal = document.grt('base1');
 
+// loadElist()
 
+// function loadElist(){
+//     buttVal.addEventListener("click", record);
+// }
 
-let buttVal = document.grt('base1');
+// function record(){
+//     console.log('ive been clicked')
+// }
 
-loadElist()
-
-function loadElist(){
-    buttVal.addEventListener("click", record);
+let butID = []
+let buttons = document.getElementsByName("button");
+let buttonsCount = buttons.length;
+for (var i = 0; i < buttonsCount; i += 1) {
+    buttons[i].onclick = function(e) {
+        this.id
+        console.log(this.id)
+        butID.push(this.id);
+    };
+    
 }
+console.log(butID)
 
 
 
-function record(){
-    console.log('ive been clicked')
-}
-
-let queryURL = "https://api.pokemontcg.io/v1/cards?pageSize=300&setCode="+buttVal;
+let queryURL = "https://api.pokemontcg.io/v1/cards?pageSize=300&setCode=base1";
 console.log(queryURL)
 
 
