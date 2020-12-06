@@ -51,16 +51,21 @@
     <div class="container">
         <h1 class="display-4">Card Collect Spreadsheets</h1>
         <br>
-        <p>On this page you will be able to create your own spreadsheets to track your Card sets and keep track of your investments/sales of cards.</p>
-        <a id='base1' value='base1' class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Base Set</a>
-        <a id="base2" value='base2' class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Jungle</a>
-        <a class="btn btn-lg btn-primary" href="/guestSearch" role="button">Fossil</a>
+        <p>On this page you will be able to browse all of the Pokemon Sets and keep track of every card you have by checking them off as you go.</p>
+        <a id='base1' class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Base Set</a>
+        <a id="base2" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Jungle</a>
+        <a id="basep" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">WOTC Promos</a>
+        <a id="base3" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Fossil</a>
+        <a id="base4" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Base Set 2</a>
+        <a id="base5" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Team Rocket</a>
+        <a id="gym1" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Gym Heroes</a>
+        <a id="gym2" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Gym Challenge</a>
         <div class="charzDiv"><img class="charzImg" src="charizard.png"  height="400px" alt="charizard"></div>
     </div>
 </div>
 
 
-    <div class="container">
+    <div class="container initial">
       <div id="target"></div>  
       <div id="collection">
         <div  class="checks"><input id="checkAll" type="checkbox" onClick="toggle(this);" value="Select All" class="collectionBox">Check All</div>
@@ -68,22 +73,22 @@
       </div>
     </div>
 
-
-    <table class="" id="resultsTable">
-      <thead class="">
-        <tr class="blue">
+    <div class="container initial">
+      <table class="" id="resultsTable">
+        <thead class="">
+          <tr class="blue">
             <th class="pokeInfo">Owned</th>
             <th class="pokeInfo">Set No.</th>
             <th class="pokeInfo">Name</th>
             <th class="pokeInfo">Rarity</th>
             <th class="pokeInfo">Card Image</th>
-        </tr>
-    </thead>
-    <tbody id="resultsBody">
-
-    </tbody>
-    </table>
-
+          </tr>
+        </thead>
+        <tbody id="resultsBody">
+    
+        </tbody>
+      </table>
+    </div>
     <!-- Footer -->
     <footer class="section-footer">
       <div class="container">
