@@ -24,6 +24,9 @@ body{
   text-transform: uppercase;
  }
 
+.initial{
+  display: none;
+}
 
 .table-container{
     margin-top:125px;
@@ -33,7 +36,9 @@ body{
 #collection{
   border: 2px solid black;
   padding: 1rem;
+  margin-top: 5rem;
   margin-bottom: 15px;
+
 }
 
 .collectCount{
@@ -103,7 +108,10 @@ input {
     font-size: larger;
     color: black;
     text-align: center;
-    margin-bottom: 5rem;
+}
+
+.jumbotron{
+  margin-bottom: 0;
 }
 
   .charzDiv{
