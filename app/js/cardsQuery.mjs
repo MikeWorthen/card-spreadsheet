@@ -1,9 +1,12 @@
 //
+window.addEventListener('load', initiate)
+
 document.querySelectorAll('.btn').forEach(item => {
-    item.addEventListener('click', event => {
-      event.preventDefault()
-      clear();
-      initiate();
+    item.addEventListener('click',  event  => {
+        initiate();
+        event.preventDefault()
+        clear();
+      
     })
 })
 
