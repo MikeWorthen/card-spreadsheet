@@ -34,17 +34,6 @@ document.querySelectorAll('.btn').forEach(item => {
     }
 
 
-    
-
-
-
-// let queryURL = "https://api.pokemontcg.io/v1/cards?pageSize=300&setCode=base1";
-// console.log(queryURL)
-
-
-
-// let buttVal = document.getElementsByName('button').id
-// let buttVal = document.getElementById('base1').id
 function query(e){
     
     let queryURL = "https://api.pokemontcg.io/v1/cards?pageSize=300&setCode="+butID[0];
@@ -70,7 +59,8 @@ function query(e){
                     letterNumber: pokemon[i].number,
                     name: pokemon[i].name,
                     rarity: pokemon[i].rarity,
-                    imageUrl: pokemon[i].imageUrlHiRes
+                    imageUrl: pokemon[i].imageUrlHiRes,
+                    logoUrl: pokemon[i].logoUrl
                }
     
                 newResult.push(targetResult);
