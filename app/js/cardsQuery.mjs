@@ -60,7 +60,6 @@ function query(e){
                     name: pokemon[i].name,
                     rarity: pokemon[i].rarity,
                     imageUrl: pokemon[i].imageUrlHiRes,
-                    logoUrl: pokemon[i].logoUrl
                }
     
                 newResult.push(targetResult);

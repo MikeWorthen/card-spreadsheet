@@ -55,6 +55,11 @@ a{
     margin-top: 3rem;
 }
 
+.setImg{
+    max-width: 15%;
+    height: auto;
+}
+
 /* Footer */
 
 .section-footer{
