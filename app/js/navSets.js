@@ -1,20 +1,3 @@
-// window.addEventListener('load', start)
-
-
-
-// let buttons = document.getElementsByName("button");
-// let butID = []
-// function start(){
-//     for (let i = 0; i < buttons.length; i++) {
-//         let b = buttons[i].id
-//         butID.push(b)
-//         console.log(b)
-//         console.log(butID)
-//     }
-
-
-// }
-   
 let queryURLTest = "https://api.pokemontcg.io/v1/sets?pageSize=300";
 console.log(queryURLTest)
    
@@ -24,9 +7,6 @@ console.log(queryURLTest)
             let pokemon = response.data.sets
             let newResult = []
             
-          
-
-          
 
             // console.log(targetResult)
             
@@ -38,7 +18,6 @@ console.log(queryURLTest)
                 ]
 
                 newResult.push(targetResult); 
-                console.log(newResult)   
             }
     
             newResult.reverse()
@@ -66,9 +45,33 @@ console.log(queryURLTest)
                 // aDiv2.appendChild(setDiv2)
 
     
-                document.getElementById('buttonResults').append(aDiv1);
+                document.getElementById('mySidenav').append(aDiv1);
                 // document.getElementById('buttonResults').append(aDiv2);
     
             }
     
         });
+
+/* Open the sidenav */
+/* Set the width of the side navigation to 250px */
+// function openNav() {
+//   document.getElementById("mySidenav").style.width = "600px";
+// }
+
+// /* Set the width of the side navigation to 0 */
+// function closeNav() {
+//   document.getElementById("mySidenav").style.width = "0";
+// }
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
