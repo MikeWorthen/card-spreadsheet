@@ -23,10 +23,16 @@ module.exports = function (app) {
   //   console.log(req.user)
   // });
 
+  // Card Sets Page
+  app.get("/cardSets", function (req, res) {
+    res.sendFile(path.join(__dirname, "../app/html/cardSets.html"));
+  });
+
   // Guest User Spreadsheets
   app.get("/guestSearch", function (req, res) {
     res.sendFile(path.join(__dirname, "../app/html/cardSearch.html"));
   });
+
 
   // app.get("/", ensureAuthenticated, (req, res) =>
   //   res.render("index", {

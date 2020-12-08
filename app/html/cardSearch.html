@@ -6,160 +6,177 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- external -->
+    <link rel="stylesheet" type="text/css" href="sidenav.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="spreadsheet.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Oswald" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    
-
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="/">Card Collect</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/users/register"><span class="fas fa-user"></span> Sign Up</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/users/login"><span class="fas fa-sign-in-alt"></span> Sign In</a>
-            </li>
-          </ul>
+    <div id="main">
+      
+      
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="/">Card Collect</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/users/register"><span class="fas fa-user"></span> Sign Up</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/users/login"><span class="fas fa-sign-in-alt"></span> Sign In</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      
+        <!-- Use any element to open the sidenav -->
+                <span onclick="openNav()">open</span>
+      
+              <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         
+              </div>
+      
+      
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Card Collect Spreadsheets</h1>
+          <br>
+          <p>On this page you will be able to browse all of the Pokemon Sets and keep track of every card you have by checking
+            them off as you go.</p>
+          <div class="sets">
+            <div class="row">
+              <a id='base1' class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Base Set</a>
+              <a id="base2" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Jungle</a>
+              <a id="basep" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">WOTC Promos</a>
+            </div>
+            <div class="row">
+              <a id="base3" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Fossil</a>
+              <a id="base4" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Base Set 2</a>
+              <a id="base5" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Team Rocket</a>
+            </div>
+            <div class="row">
+              <a id="gym1" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Gym Heroes</a>
+              <a id="gym2" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Gym Challenge</a>
+              <a id="neo1" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Neo Genesis</a>
+            </div>
+          </div>
+          <div class="charzDiv"><img class="charzImg" src="charizard.png" height="400px" alt="charizard"></div>
         </div>
       </div>
-    </nav>
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Card Collect Spreadsheets</h1>
-    <br>
-    <p>On this page you will be able to browse all of the Pokemon Sets and keep track of every card you have by checking
-      them off as you go.</p>
-    <div class="sets">
-      <div class="row">
-        <a id='base1' class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Base Set</a>
-        <a id="base2" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Jungle</a>
-        <a id="basep" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">WOTC Promos</a>
-      </div>
-      <div class="row">
-        <a id="base3" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Fossil</a>
-        <a id="base4" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Base Set 2</a>
-        <a id="base5" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Team Rocket</a>
-      </div>
-      <div class="row">
-        <a id="gym1" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Gym Heroes</a>
-        <a id="gym2" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Gym Challenge</a>
-        <a id="neo1" class="btn btn-lg btn-primary" name="button" href="/guestSearch" role="button">Neo Genesis</a>
-      </div>
-    </div>
-    <div class="charzDiv"><img class="charzImg" src="charizard.png" height="400px" alt="charizard"></div>
-  </div>
-</div>
-
-
-    <div class="container initial">
-      <div id="target"></div>  
-      <div id="collection">
-        <div  class="checks"><input id="checkAll" type="checkbox" onClick="toggle(this);" value="Select All" class="collectionBox">Check All</div>
-        <div class="collectCount">Collection Count: 0 of 102</div> 
-      </div>
-    </div>
-
-    <div class="container initial">
-      <table class="" id="resultsTable">
-        <thead class="">
-          <tr class="blue">
-            <th class="pokeInfo">Owned</th>
-            <th class="pokeInfo">Set No.</th>
-            <th class="pokeInfo">Name</th>
-            <th class="pokeInfo">Rarity</th>
-            <th class="pokeInfo">Card Image</th>
-          </tr>
-        </thead>
-        <tbody id="resultsBody">
-    
-        </tbody>
-      </table>
-    </div>
-    <!-- Footer -->
-    <footer class="section-footer">
-      <div class="container">
-          <div>
-              <h2>Social Media</h2>
-              <a href="http://twitter.com">
-                  <i class="fab fa-twitter fa-2x"></i>
-              </a>
-              <a href="http://facebook.com">
-                  <i class="fab fa-facebook fa-2x"></i>
-              </a>
-              <a href="https://www.instagram.com/sd_card_collecting/" target="none">
-                  <i class="fab fa-instagram fa-2x"></i>
-              </a>
+      
+      
+          <div class="container initial">
+            <div id="target"></div>  
+            <div id="collection">
+              <div  class="checks"><input id="checkAll" type="checkbox" onClick="toggle(this);" value="Select All" class="collectionBox">Check All</div>
+              <div class="collectCount">Collection Count: 0 of 102</div> 
+            </div>
           </div>
-          <div>
-              <h3>Company Links</h3>
-              <ul class="companyLinks">
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-              </ul>
+      
+          <div class="container initial">
+            <table class="" id="resultsTable">
+              <thead class="">
+                <tr class="blue">
+                  <th class="pokeInfo">Owned</th>
+                  <th class="pokeInfo">Set No.</th>
+                  <th class="pokeInfo">Name</th>
+                  <th class="pokeInfo">Rarity</th>
+                  <th class="pokeInfo">Card Image</th>
+                </tr>
+              </thead>
+              <tbody id="resultsBody">
+          
+              </tbody>
+            </table>
           </div>
-          <div>
-              <h3>Subscribe</h3>
-              <p>Take advantage of our monthly news letter.</p>
-              <form action="/subscribe/add" method="POST">
-                  <div class="email-form">
-                      <span class="form-control-wrap">
-                          <input type="email" name="subscriber_email" id="email" size="40" class="form-control"
-                              placeholder="email" />
-                      </span>
-                      <button type="submit" value="Subscribe" class="form-control submit">
-                          <i class="fas fa-chevron-right"></i>
-                      </button>
-                  </div>
-              </form>
-          </div>
-      </div>
-  </footer>
+          <!-- Footer -->
+          <footer class="section-footer">
+            <div class="container">
+                <div>
+                    <h2>Social Media</h2>
+                    <a href="http://twitter.com">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="http://facebook.com">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sd_card_collecting/" target="none">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+                <div>
+                    <h3>Company Links</h3>
+                    <ul class="companyLinks">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Subscribe</h3>
+                    <p>Take advantage of our monthly news letter.</p>
+                    <form action="/subscribe/add" method="POST">
+                        <div class="email-form">
+                            <span class="form-control-wrap">
+                                <input type="email" name="subscriber_email" id="email" size="40" class="form-control"
+                                    placeholder="email" />
+                            </span>
+                            <button type="submit" value="Subscribe" class="form-control submit">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+      
+          <!-- Optional JavaScript -->
+                  <!-- Optional JavaScript -->
+      
+                  <script>
+                    function toggle(checkbox) {
+                      var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                      for (var i = 0; i < checkboxes.length; i++) {
+                          if (checkboxes[i] != checkbox)
+                              checkboxes[i].checked = checkbox.checked;
+                      }
+                  }
+                  </script>
+      
+              <script type="module" src="cardsQuery.mjs"></script>
+              <script src="navSets.js"></script>
+              <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+              <script src="https://kit.fontawesome.com/adb19d7eeb.js" crossorigin="anonymous"></script>
+      
+              <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
 
-    <!-- Optional JavaScript -->
-            <!-- Optional JavaScript -->
-
-            <script>
-              function toggle(checkbox) {
-                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-                for (var i = 0; i < checkboxes.length; i++) {
-                    if (checkboxes[i] != checkbox)
-                        checkboxes[i].checked = checkbox.checked;
-                }
-            }
-            </script>
-
-            <script type="module" src="cardsQuery.mjs"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-        <script src="https://kit.fontawesome.com/adb19d7eeb.js" crossorigin="anonymous"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
