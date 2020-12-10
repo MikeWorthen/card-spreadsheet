@@ -1,3 +1,4 @@
+
 let queryURLTest = "https://api.pokemontcg.io/v1/sets?pageSize=300";
 console.log(queryURLTest)
    
@@ -15,6 +16,7 @@ console.log(queryURLTest)
                     logo: pokemon[i].logoUrl,
                     number: pokemon[i].name,
                     release: pokemon[i].releaseDate,
+                    symbol: pokemon[i].symbolUrl,
 
                 }
                 newResult.push(targetResult); 
@@ -27,6 +29,7 @@ console.log(queryURLTest)
                 let logo = newResult[j].logo;
                 let number = newResult[j].number;
                 let release = newResult[j].release;
+                let symbol = newResult[j].symbol;
     
 
                 let aDiv1 = document.createElement('a');
@@ -37,6 +40,7 @@ console.log(queryURLTest)
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
                 let setRelease = document.createElement('p');
+                let symbolImg = document.createElement('img');
 
                 
                 setDiv.classList.add("test");
@@ -46,6 +50,8 @@ console.log(queryURLTest)
                 aDiv1.setAttribute('href', "");
                 setImage.classList.add('card-image');
                 setContent.classList.add('card-content');
+                symbolImg.classList.add('symbolImg');
+                symbolImg.setAttribute('src', symbol);
 
                
                 setName.innerHTML = number;
@@ -59,6 +65,7 @@ console.log(queryURLTest)
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
                 setNameDiv.appendChild(setRelease);
+                setNameDiv.appendChild(symbolImg);
                
                
                 document.getElementById('buttonResults').append(aDiv1);
