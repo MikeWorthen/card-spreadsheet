@@ -60,6 +60,11 @@ a{
     height: auto;
 }
 
+.symbolImg{
+   height: 40px;
+   width: 40px;
+}
+
 #buttonResults .card .card-image img {
     max-height: 100%;
     text-align: center;
