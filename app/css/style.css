@@ -65,26 +65,26 @@ a{
    width: 40px;
 }
 
-#buttonResults .card .card-image img {
+#cardDiv .card .card-image img {
     max-height: 100%;
     text-align: center;
 }
 
-#buttonResults .card .card-image {
+#cardDiv .card .card-image {
     height: 140px;
     padding-top: 15px;
     text-align: center;
 }
 
-#buttonResults a {
+#cardDiv a {
     text-decoration: none;
 }
 
-#buttonResults p {
+#cardDiv p {
     font-size: 16px;
 }
 
-#buttonResults a:hover {
+#cardDiv a:hover {
     color:  #4a4a4a;
 }
 
@@ -110,7 +110,7 @@ a{
     transition-duration: .4s;
   }
 
-#buttonResults {
+#cardDiv {
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -119,7 +119,7 @@ a{
     list-style-type: none;
 }
 
-#buttonResults .card {
+#cardDiv .card {
     display: block;
     margin: 1em;
     padding: 1em;
