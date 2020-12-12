@@ -258,6 +258,393 @@
     max-width: 405px;
 }
 
+/* Diamond and Pearl Set */
+#dpDiv .card .card-image img {
+    max-height: 100%;
+    text-align: center;
+}
+
+#dpDiv .card .card-image {
+    height: 140px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#dpDiv a {
+    text-decoration: none;
+}
+
+#dpDiv p {
+    font-size: 16px;
+}
+
+#dpDiv a:hover {
+    color:  #4a4a4a;
+}
+
+#dpDiv {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#dpDiv .card {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    flex-basis: calc(33.33% - 2em);
+    min-width: 250px;
+    cursor: pointer;
+    max-width: 405px;
+}
+
+/* Pop Series Set */
+#popDiv .card .card-image img {
+    max-height: 100%;
+    text-align: center;
+}
+
+#popDiv .card .card-image {
+    height: 140px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#popDiv a {
+    text-decoration: none;
+}
+
+#popDiv p {
+    font-size: 16px;
+}
+
+#popDiv a:hover {
+    color:  #4a4a4a;
+}
+
+#popDiv {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#popDiv .card {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    flex-basis: calc(33.33% - 2em);
+    min-width: 250px;
+    cursor: pointer;
+    max-width: 405px;
+}
+
+/* Platinum Set */
+#platDiv .card .card-image img {
+    max-height: 100%;
+    text-align: center;
+}
+
+#platDiv .card .card-image {
+    height: 140px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#platDiv a {
+    text-decoration: none;
+}
+
+#platDiv p {
+    font-size: 16px;
+}
+
+#platDiv a:hover {
+    color:  #4a4a4a;
+}
+
+#platDiv {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#platDiv .card {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    flex-basis: calc(33.33% - 2em);
+    min-width: 250px;
+    cursor: pointer;
+    max-width: 405px;
+}
+
+/* HeartGold SoulSilver Set */
+#hgssDiv .card .card-image img {
+    max-height: 100%;
+    text-align: center;
+}
+
+#hgssDiv .card .card-image {
+    height: 140px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#hgssDiv a {
+    text-decoration: none;
+}
+
+#hgssDiv p {
+    font-size: 16px;
+}
+
+#hgssDiv a:hover {
+    color:  #4a4a4a;
+}
+
+#hgssDiv {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#hgssDiv .card {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    flex-basis: calc(33.33% - 2em);
+    min-width: 250px;
+    cursor: pointer;
+    max-width: 405px;
+}
+
+/* Call of Legends Set */
+#callDiv .card .card-image img {
+    max-height: 100%;
+    text-align: center;
+}
+
+#callDiv .card .card-image {
+    height: 140px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#callDiv a {
+    text-decoration: none;
+}
+
+#callDiv p {
+    font-size: 16px;
+}
+
+#callDiv a:hover {
+    color:  #4a4a4a;
+}
+
+#callDiv {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#callDiv .card {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    flex-basis: calc(33.33% - 2em);
+    min-width: 250px;
+    cursor: pointer;
+    max-width: 405px;
+}
+
+/* Black and White Set */
+#bwDiv .card .card-image img {
+    max-height: 100%;
+    text-align: center;
+}
+
+#bwDiv .card .card-image {
+    height: 140px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#bwDiv a {
+    text-decoration: none;
+}
+
+#bwDiv p {
+    font-size: 16px;
+}
+
+#bwDiv a:hover {
+    color:  #4a4a4a;
+}
+
+#bwDiv {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#bwDiv .card {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    flex-basis: calc(33.33% - 2em);
+    min-width: 250px;
+    cursor: pointer;
+    max-width: 405px;
+}
+
+/* XY Set */
+#xyDiv .card .card-image img {
+    max-height: 100%;
+    text-align: center;
+}
+
+#xyDiv .card .card-image {
+    height: 140px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#xyDiv a {
+    text-decoration: none;
+}
+
+#xyDiv p {
+    font-size: 16px;
+}
+
+#xyDiv a:hover {
+    color:  #4a4a4a;
+}
+
+#xyDiv {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#xyDiv .card {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    flex-basis: calc(33.33% - 2em);
+    min-width: 250px;
+    cursor: pointer;
+    max-width: 405px;
+}
+
+/* Sun and Moon Set */
+#smDiv .card .card-image img {
+    max-height: 100%;
+    text-align: center;
+}
+
+#smDiv .card .card-image {
+    height: 140px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#smDiv a {
+    text-decoration: none;
+}
+
+#smDiv p {
+    font-size: 16px;
+}
+
+#smDiv a:hover {
+    color:  #4a4a4a;
+}
+
+#smDiv {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#smDiv .card {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    flex-basis: calc(33.33% - 2em);
+    min-width: 250px;
+    cursor: pointer;
+    max-width: 405px;
+}
+
+/* Sword and Shield Set */
+#swshDiv .card .card-image img {
+    max-height: 100%;
+    text-align: center;
+}
+
+#swshDiv .card .card-image {
+    height: 140px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#swshDiv a {
+    text-decoration: none;
+}
+
+#swshDiv p {
+    font-size: 16px;
+}
+
+#swshDiv a:hover {
+    color:  #4a4a4a;
+}
+
+#swshDiv {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#swshDiv .card {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    flex-basis: calc(33.33% - 2em);
+    min-width: 250px;
+    cursor: pointer;
+    max-width: 405px;
+}
+
 .card{
     background-color: #fff;
     box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
