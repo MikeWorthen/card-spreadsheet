@@ -38,6 +38,11 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../app/html/test.html"));
   });
 
+    // Test2 Page
+    app.get("/test2", function (req, res) {
+      res.sendFile(path.join(__dirname, "../app/html/test2.html"));
+    });
+
   // app.get("/", ensureAuthenticated, (req, res) =>
   //   res.render("index", {
   //     user: req.user,

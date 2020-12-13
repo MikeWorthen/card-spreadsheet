@@ -43,7 +43,7 @@ axios
     // Sword and Shield Series
 
         // Adds a Header
-        let swshHead = document.createElement('h1');
+        let swshHead = document.createElement('h2');
         swshHead.classList.add('cardHead');
         swshHead.innerHTML = "Sword & Shield Series";
         document.getElementById("buttonResults").append(swshHead)
@@ -78,7 +78,8 @@ axios
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
             aDiv1.classList.add('card');
-            aDiv1.setAttribute('href', "");
+            aDiv1.setAttribute('href', "/test2");
+            aDiv1.setAttribute('name', "button");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
             symbolImg.classList.add('symbolImg');
@@ -107,7 +108,7 @@ axios
     // Sun and Moon Series
 
         // Adds a Header
-        let smHead = document.createElement('h1');
+        let smHead = document.createElement('h2');
         smHead.classList.add('cardHead');
         smHead.innerHTML = "Sun & Moon Series";
         document.getElementById("buttonResults").append(smHead)
@@ -171,7 +172,7 @@ axios
     // XY Series
 
         // Adds a Header
-        let xyHead = document.createElement('h1');
+        let xyHead = document.createElement('h2');
         xyHead.classList.add('cardHead');
         xyHead.innerHTML = "XY Series";
         document.getElementById("buttonResults").append(xyHead)
@@ -235,7 +236,7 @@ axios
     // Black and White Series
 
         // Adds a Header
-        let bwHead = document.createElement('h1');
+        let bwHead = document.createElement('h2');
         bwHead.classList.add('cardHead');
         bwHead.innerHTML = "Black & White Series";
         document.getElementById("buttonResults").append(bwHead)
@@ -299,7 +300,7 @@ axios
     // Call of Legends Series
 
         // Adds a Header
-        let callHead = document.createElement('h1');
+        let callHead = document.createElement('h2');
         callHead.classList.add('cardHead');
         callHead.innerHTML = "Call of Legends Series";
         document.getElementById("buttonResults").append(callHead)
@@ -363,7 +364,7 @@ axios
     // HeartGold SoulSilver Series
 
         // Adds a Header
-        let hgssHead = document.createElement('h1');
+        let hgssHead = document.createElement('h2');
         hgssHead.classList.add('cardHead');
         hgssHead.innerHTML = "HeartGold SoulSilver Series";
         document.getElementById("buttonResults").append(hgssHead)
@@ -427,7 +428,7 @@ axios
     // Platinum Series
 
         // Adds a Header
-        let platHead = document.createElement('h1');
+        let platHead = document.createElement('h2');
         platHead.classList.add('cardHead');
         platHead.innerHTML = "Platinum Series";
         document.getElementById("buttonResults").append(platHead)
@@ -491,7 +492,7 @@ axios
     // Pop Series
 
         // Adds a Header
-        let popHead = document.createElement('h1');
+        let popHead = document.createElement('h2');
         popHead.classList.add('cardHead');
         popHead.innerHTML = "POP Series";
         document.getElementById("buttonResults").append(popHead)
@@ -555,7 +556,7 @@ axios
     // Diamond and Pearl Series
 
         // Adds a Header
-        let dpHead = document.createElement('h1');
+        let dpHead = document.createElement('h2');
         dpHead.classList.add('cardHead');
         dpHead.innerHTML = "Diamond & Pearl Series";
         document.getElementById("buttonResults").append(dpHead)
@@ -619,7 +620,7 @@ axios
     // Ruby and Sapphire Series
 
         // Adds a Header
-        let rsHead = document.createElement('h1');
+        let rsHead = document.createElement('h2');
         rsHead.classList.add('cardHead');
         rsHead.innerHTML = "EX Ruby & Sapphire Series";
         document.getElementById("buttonResults").append(rsHead)
@@ -683,7 +684,7 @@ axios
     // e-Card Set Series
 
         // Adds a Header
-        let eCardHead = document.createElement('h1');
+        let eCardHead = document.createElement('h2');
         eCardHead.classList.add('cardHead');
         eCardHead.innerHTML = "e-Card Series";
         document.getElementById("buttonResults").append(eCardHead)
@@ -747,7 +748,7 @@ axios
     // Legendary Set Series
 
         // Adds a Header
-        let legendHead = document.createElement('h1');
+        let legendHead = document.createElement('h2');
         legendHead.classList.add('cardHead');
         legendHead.innerHTML = "Legendary Collection Series";
         document.getElementById("buttonResults").append(legendHead)
@@ -811,7 +812,7 @@ axios
     // Neo Set Series
 
         // Adds a Header
-        let neoHead = document.createElement('h1');
+        let neoHead = document.createElement('h2');
         neoHead.classList.add('cardHead');
         neoHead.innerHTML = "Neo Set Series";
         document.getElementById("buttonResults").append(neoHead)
@@ -875,7 +876,7 @@ axios
     // Gym Set Series
 
         // Adds a Header
-        let gymHead = document.createElement('h1');
+        let gymHead = document.createElement('h2');
         gymHead.classList.add('cardHead');
         gymHead.innerHTML = "Gym Set Series";
         document.getElementById("buttonResults").append(gymHead)
@@ -939,7 +940,7 @@ axios
     // Base Set Series
 
         // Adds a Header
-        let baseHead = document.createElement('h1');
+        let baseHead = document.createElement('h2');
         baseHead.classList.add('cardHead');
         baseHead.innerHTML = "Base Set Series";
         document.getElementById("buttonResults").append(baseHead)
