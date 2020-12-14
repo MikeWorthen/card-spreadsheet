@@ -77,8 +77,9 @@ axios
             setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
+            aDiv1.id = "base1";
             aDiv1.classList.add('card');
-            aDiv1.setAttribute('href', "/test2");
+            aDiv1.setAttribute('href', "/cardSets");
             aDiv1.setAttribute('name', "button");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -142,6 +143,7 @@ axios
             setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
+
             aDiv1.classList.add('card');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');

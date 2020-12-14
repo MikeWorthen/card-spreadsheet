@@ -34,6 +34,7 @@ document.querySelectorAll('.btn').forEach(item => {
     }
 
 
+
 function query(e){
     
     let queryURL = "https://api.pokemontcg.io/v1/cards?pageSize=300&setCode="+butID[0];
@@ -179,5 +180,7 @@ function query(e){
         });
     
     }
+
+    
     
 

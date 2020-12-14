@@ -698,3 +698,192 @@
    height: 40px;
    width: 40px;
 }
+
+/* Spreadsheet styling */
+/* .initial{
+  display: none;
+} */
+
+.table-container{
+    margin-top:125px;
+    margin-bottom: 125px;
+}
+
+#collection{
+  border: 2px solid black;
+  padding: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 15px;
+
+}
+
+.collectCount{
+  text-align: center;
+}
+
+.checks{
+  float: left;
+  vertical-align: middle;
+}
+
+.collectionBox{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.card-table{
+    border-collapse:separate; 
+    border-spacing:0 15px;
+}
+
+thead{
+    border-spacing: 25px;
+}
+
+th, td{
+    width:50px; 
+    padding:5px;
+    /* border:1px solid black;     */
+}
+
+.boxDiv{
+  text-align: center;
+  padding: 5px 0;
+}
+
+.tableBox{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+#set-num{
+  width: 50px;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+  }
+
+  /* Scrolling Table */
+  /* h1{
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:-2px;
+    font-size:2.5em;
+    margin:20px 0;
+  } */
+
+  /* .jumbotron-fluid{
+    height: fit-content;
+    font-size: larger;
+    color: black;
+    text-align: center;
+} */
+
+/* .jumbotron{
+  margin-bottom: 0;
+} */
+
+/* .row{
+  justify-content: center;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 2rem;
+} */
+
+/* .row a{
+  margin-right: 1rem;
+} */
+
+  /* .charzDiv{
+    margin-top: 3rem;
+} */
+  
+
+  /* .cardList{
+    width:90%;
+    margin-bottom: 100px;
+  } */
+  
+  table{
+    border-collapse:collapse;
+    width:100%;
+  }
+
+  #resultsTable{
+    border:1px solid #333;
+    margin-bottom: 5rem;
+  }
+ 
+  .blue{
+    font-size: 18px;
+    background-color: #007bff;
+    margin-bottom: 5rem;
+  }
+  
+  .blue thead{
+
+    background:#007bff;
+  }
+  
+  thead{
+    color:white;
+  }
+  
+  th,td{
+    text-align:center;
+    padding:5px 0;
+  }
+  
+  tbody tr:nth-child(even){
+    background:rgb(231, 231, 231);
+  }
+  
+  tbody tr:hover{
+    background:#BDC3C7;
+    color:#FFFFFF;
+  }
+  
+  /* .fixed{
+    top:0;
+    position:fixed;
+    width:auto;
+    display:none;
+    border:none;
+  } */
+  
+  /* .scrollMore{
+    margin-top:600px;
+  } */
+  
+  /* .up{
+    cursor:pointer;
+  } */
+
+    /* modal style */
+  .modalImg{
+    height: 700px
+  }
+  
+  .modal-content{
+    background-color: transparent;
+  }
+
+  .modal-dialog{
+    background-color: transparent;
+  }
+
+  button.close{
+    background-color: black;
+    color: white;
+  }
+  button.close:hover{
+    background-color: black;
+    color: rgba(245, 245, 245, 0.678);
+  }
