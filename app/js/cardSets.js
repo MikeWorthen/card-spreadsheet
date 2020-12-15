@@ -1,3 +1,7 @@
+window.addEventListener('load', cardSets)
+
+
+function cardSets(e) {
 
 let queryURLTest = "https://api.pokemontcg.io/v1/sets/";
 console.log(queryURLTest)
@@ -42,7 +46,7 @@ axios
 
     // Sword and Shield Series
 
-        // Adds a Header
+//         // Adds a Header
         let swshHead = document.createElement('h2');
         swshHead.classList.add('cardHead');
         swshHead.innerHTML = "Sword & Shield Series";
@@ -63,7 +67,7 @@ axios
             let symbol = swshResult[j].symbol;
 
 
-            let aDiv1 = document.createElement('a');
+            let aDiv1 = document.createElement('div');
             let setDiv = document.createElement('div');
             let setImage = document.createElement('div');
             let logoImg = document.createElement('img');
@@ -74,13 +78,12 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
             aDiv1.id = "base1";
             aDiv1.classList.add('card');
-            aDiv1.setAttribute('href', "/cardSets");
             aDiv1.setAttribute('name', "button");
+            // aDiv1.setAttribute('onclick', 'initiate()');
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
             symbolImg.classList.add('symbolImg');
@@ -1003,5 +1006,5 @@ axios
         }
     });
 
-
+}
 
