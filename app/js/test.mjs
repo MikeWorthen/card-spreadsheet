@@ -5,63 +5,67 @@
 //     alert('you clicked me again!');
 //     console.log("what the fuick ")
 // });
-let buttons = document.getElementsByName("button");
+// let buttons = document.getElementsByName("button");
+// let butID = []
+
+//     $(function() {
+//         $(document).on("click", '.card', function() {
+//             event.preventDefault()
+//             // alert("You have just clicked on ");
+//             console.log("ive been clicked")
+//             masterCall()
+
+//         });
+//     });
+
+
 let butID = []
 
-    $(function() {
-        $(document).on("click", '.card', function() {
-            event.preventDefault()
-            // alert("You have just clicked on ");
-            console.log("ive been clicked")
-            masterCall()
 
-        });
+$(function testing() {
+    $(document).on("click", '.card', function () {
+        this.id;
+        event.preventDefault()
+        // alert("You have just clicked on ");
+        console.log("ive been clicked");
+        console.log(this.id);
+        butID[0] = this.id;
+        butID.push(this.id);
+        console.log(butID)
+        masterCall()
     });
+});
 
-
-
-//     $('.card').on('click', function(){
-//         console.log("clicked");
-//     });
-// });
-
-
-
-
-function masterCall(){
+    
+function masterCall() {
     clear();
-    setTimeout(initiate,1000);
-    initiate()
     query()
 }
-// document.querySelectorAll('.card').forEach(item => {
-//     item.addEventListener('click',  event  => {
-//         // $('.initial').show();
-   
-//     })
 
-// })
 
-  function clear(e) {
+function clear(e) {
     document.getElementById("resultsBody").innerHTML = "";
-  }
+}
+
+
+
 
 
 //   let buttons = document.getElementsByName("button");
 //   let butID = []
 
 
-  function initiate(){
-      for (var i = 0; i < buttons.length; i += 1) {
-          buttons[i].onclick = function(e) {
-              e.preventDefault();
-              butID[0] = this.id
-              butID.push(this.id);
-              console.log(butID);
-          };
+//   function initiate(){
+//       for (var i = 0; i < buttons.length; i += 1) {
+//           buttons[i].onclick = function(e) {
+//               e.preventDefault();
+//               butID[0] = this.id
+//               butID.push(this.id);
+//               console.log(butID);
+//           };
 
-      }
-    }
+//       }
+//     }
 
 
 
@@ -1218,7 +1222,4 @@ function query(e){
 //     });
 
 // }
-
-
-    
 
