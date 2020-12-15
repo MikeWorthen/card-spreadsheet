@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
     <!-- Optional JavaScript -->
 
     <script src="https://kit.fontawesome.com/adb19d7eeb.js" crossorigin="anonymous"></script>
@@ -74,6 +73,15 @@
             <h1 class="display-4">Card Sets</h1>
             <br>
             <div id='base1' class="card border-dark mb-3" name="button" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body text-dark">
+                    <h5 class="card-title">Dark card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                </div>
+            </div>
+            <div id='base2' class="card border-dark mb-3" name="button" style="max-width: 18rem;">
                 <div class="card-header">Header</div>
                 <div class="card-body text-dark">
                     <h5 class="card-title">Dark card title</h5>
@@ -162,12 +170,12 @@
                 </div>
             </div>
         </footer>
+        
 
         <script type="module" src="cardSets.js"></script>
-        <script type="module" src="test.mjs"></script>
-        <!-- <script type="module" src="cardSets.js"></script> -->
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <!-- <script src="cardSets.js"></script> -->
+        <script type="module" defer src="test.mjs"></script>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>->
 </body>
 
 </html>
