@@ -1,37 +1,65 @@
-// window.addEventListener('load', cardSets)
-window.addEventListener('load', initiate)
+
+// window.addEventListener('load', initiate)
+
+// $("div").delegate(".card", "click", function(){
+//     alert('you clicked me again!');
+//     console.log("what the fuick ")
+// });
+let buttons = document.getElementsByName("button");
+let butID = []
+
+    $(function() {
+        $(document).on("click", '.card', function() {
+            event.preventDefault()
+            // alert("You have just clicked on ");
+            console.log("ive been clicked")
+            masterCall()
+
+        });
+    });
 
 
 
-document.querySelectorAll('.card').forEach(item => {
-    item.addEventListener('click',  event  => {
-        $('.initial').show();
-        initiate();
-        event.preventDefault()
-        clear();
-        butID = [];
-    })
+//     $('.card').on('click', function(){
+//         console.log("clicked");
+//     });
+// });
 
-})
+
+
+
+function masterCall(){
+    clear();
+    setTimeout(initiate,1000);
+    initiate()
+    query()
+}
+// document.querySelectorAll('.card').forEach(item => {
+//     item.addEventListener('click',  event  => {
+//         // $('.initial').show();
+   
+//     })
+
+// })
 
   function clear(e) {
     document.getElementById("resultsBody").innerHTML = "";
   }
 
 
-  let buttons = document.getElementsByName("button");
-  let butID = []
+//   let buttons = document.getElementsByName("button");
+//   let butID = []
+
+
   function initiate(){
       for (var i = 0; i < buttons.length; i += 1) {
           buttons[i].onclick = function(e) {
-              e.preventDefault()
+              e.preventDefault();
               butID[0] = this.id
-              console.log(this.id)
               butID.push(this.id);
-              query();
-              console.log(butID)
+              console.log(butID);
           };
-            
+
       }
     }
 
@@ -40,7 +68,7 @@ document.querySelectorAll('.card').forEach(item => {
 function query(e){
     
     let queryURL = "https://api.pokemontcg.io/v1/cards?pageSize=300&setCode="+butID[0];
-    console.log(queryURL)
+    // console.log(queryURL)
     axios
         .get(queryURL)
         .then(function (response) {

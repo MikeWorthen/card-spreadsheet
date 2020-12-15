@@ -46,7 +46,7 @@ axios
 
     // Sword and Shield Series
 
-//         // Adds a Header
+       // Adds a Header
         let swshHead = document.createElement('h2');
         swshHead.classList.add('cardHead');
         swshHead.innerHTML = "Sword & Shield Series";
@@ -80,8 +80,9 @@ axios
 
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.id = "base1";
+            aDiv1.id = "swsh4";
             aDiv1.classList.add('card');
+            aDiv1.classList.add("test")
             aDiv1.setAttribute('name', "button");
             // aDiv1.setAttribute('onclick', 'initiate()');
             setImage.classList.add('card-image');
