@@ -24,15 +24,15 @@ let butID = []
 
 $(function testing() {
     $(document).on("click", '.card', function () {
-        this.id;
-        event.preventDefault()
-        // alert("You have just clicked on ");
-        console.log("ive been clicked");
-        console.log(this.id);
+        // this.id;
+        $('.initial').show();
+        event.preventDefault();
         butID[0] = this.id;
         butID.push(this.id);
-        console.log(butID)
-        masterCall()
+        console.log(butID);
+        masterCall();
+        $('#buttonResults').hide();
+
     });
 });
 
