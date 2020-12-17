@@ -768,48 +768,7 @@ input {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: hidden;
-  }
-
-  /* Scrolling Table */
-  /* h1{
-    text-align:center;
-    text-transform:uppercase;
-    letter-spacing:-2px;
-    font-size:2.5em;
-    margin:20px 0;
-  } */
-
-  /* .jumbotron-fluid{
-    height: fit-content;
-    font-size: larger;
-    color: black;
-    text-align: center;
-} */
-
-/* .jumbotron{
-  margin-bottom: 0;
-} */
-
-/* .row{
-  justify-content: center;
-  margin-right: 25%;
-  margin-left: 25%;
-  margin-top: 2rem;
-} */
-
-/* .row a{
-  margin-right: 1rem;
-} */
-
-  /* .charzDiv{
-    margin-top: 3rem;
-} */
-  
-
-  /* .cardList{
-    width:90%;
-    margin-bottom: 100px;
-  } */
+}
   
   table{
     border-collapse:collapse;
@@ -849,22 +808,6 @@ input {
     background:#BDC3C7;
     color:#FFFFFF;
   }
-  
-  /* .fixed{
-    top:0;
-    position:fixed;
-    width:auto;
-    display:none;
-    border:none;
-  } */
-  
-  /* .scrollMore{
-    margin-top:600px;
-  } */
-  
-  /* .up{
-    cursor:pointer;
-  } */
 
     /* modal style */
   .modalImg{

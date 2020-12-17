@@ -80,11 +80,9 @@ axios
 
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.id = "swsh4";
             aDiv1.classList.add('card');
-            aDiv1.classList.add("test")
+            aDiv1.classList.add("swsh");
             aDiv1.setAttribute('name', "button");
-            // aDiv1.setAttribute('onclick', 'initiate()');
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
             symbolImg.classList.add('symbolImg');
@@ -108,6 +106,14 @@ axios
             document.getElementById('swshDiv').append(aDiv1);
 
         }
+
+    // Assigning the correct ID to each card set        
+        let swshID = ["swsh4", "swsh35", "swsh3", "swsh2", "swsh1", "swshp"]
+        let elements = document.getElementsByClassName('swsh');
+
+        swshID.forEach(function(id, i) {
+        elements[i].setAttribute('id', id);
+        });
 
 
     // Sun and Moon Series
@@ -144,11 +150,10 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-
             aDiv1.classList.add('card');
+            aDiv1.classList.add('sunMoon');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -173,6 +178,14 @@ axios
             document.getElementById('smDiv').append(aDiv1);
 
         }
+
+    // Assigning the correct ID to each card set        
+        let smID = ["sm12", "sm115", "sma", "sm11", "sm10", "det1", "sm9", "sm8", "sm75", "sm7", "sm6", "sm5", "sm4", "sm35", "sm3", "sm2", "sm1", "smp"]
+        let elements1 = document.getElementsByClassName('sunMoon');
+
+        smID.forEach(function(id, i) {
+        elements1[i].setAttribute('id', id);
+        });
 
 
     // XY Series
@@ -209,10 +222,10 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
             aDiv1.classList.add('card');
+            aDiv1.classList.add('xy');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -237,6 +250,14 @@ axios
             document.getElementById('xyDiv').append(aDiv1);
 
         }
+
+    // Assigning the correct ID to each card set        
+        let xyID = ["xy12", "xy11", "g1", "xy10", "xy9", "xy8", "xy7", "xy6", "dc1", "xy5", "xy4", "xy3", "xy2", "xy1", "xy0", "xyp"]
+        let elements2 = document.getElementsByClassName('xy');
+
+        xyID.forEach(function(id, i) {
+        elements2[i].setAttribute('id', id);
+        });
 
 
     // Black and White Series

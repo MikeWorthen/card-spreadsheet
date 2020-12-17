@@ -152,11 +152,20 @@
             </div>
         </footer>
         
+        <script>
+            function toggle(checkbox) {
+              var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+              for (var i = 0; i < checkboxes.length; i++) {
+                  if (checkboxes[i] != checkbox)
+                      checkboxes[i].checked = checkbox.checked;
+              }
+          }
+          </script>
 
         <script type="module" src="cardSets.js"></script>
         <script type="module" defer src="cardsQuery.mjs"></script>
 
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 
 </html>
