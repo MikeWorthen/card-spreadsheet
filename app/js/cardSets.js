@@ -80,8 +80,7 @@ axios
 
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
-            aDiv1.classList.add("swsh");
+            aDiv1.classList.add('card', 'swsh');
             aDiv1.setAttribute('name', "button");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -152,8 +151,7 @@ axios
 
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
-            aDiv1.classList.add('sunMoon');
+            aDiv1.classList.add('card', 'sunMoon');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -224,8 +222,7 @@ axios
 
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
-            aDiv1.classList.add('xy');
+            aDiv1.classList.add('card', 'xy');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -294,10 +291,9 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'bw');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -322,6 +318,14 @@ axios
             document.getElementById('bwDiv').append(aDiv1);
 
         }
+
+    // Assigning the correct ID to each card set        
+        let bwID = ["bw11", "bw10", "bw9", "bw8", "bw7", "dv1", "bw6", "bw5", "bw4", "bw3", "bw2", "bw1", "bwp"]
+        let elements3 = document.getElementsByClassName('bw');
+
+        bwID.forEach(function(id, i) {
+        elements3[i].setAttribute('id', id);
+        });
 
 
     // Call of Legends Series
@@ -358,10 +362,10 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'callLegends');
+            aDiv1.id = "col1";
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -422,10 +426,9 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'hgss');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -450,6 +453,14 @@ axios
             document.getElementById('hgssDiv').append(aDiv1);
 
         }
+
+        // Assigning the correct ID to each card set        
+            let hgssID = ["hgss4", "hgss3", "hgss2", "hsp", "hgss1"]
+            let elements4 = document.getElementsByClassName('hgss');
+    
+            hgssID.forEach(function(id, i) {
+            elements4[i].setAttribute('id', id);
+            });
 
 
     // Platinum Series
@@ -486,10 +497,9 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'plat');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -514,6 +524,14 @@ axios
             document.getElementById('platDiv').append(aDiv1);
 
         }
+
+    // Assigning the correct ID to each card set        
+        let platID = ["ru1", "pl4", "pl3", "pl2", "pl1"]
+        let elements5 = document.getElementsByClassName('plat');
+
+        platID.forEach(function(id, i) {
+        elements5[i].setAttribute('id', id);
+        });
 
         
     // Pop Series
@@ -550,10 +568,9 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'pop');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -578,6 +595,14 @@ axios
             document.getElementById('popDiv').append(aDiv1);
 
         }
+
+    // Assigning the correct ID to each card set        
+        let popID = ["pop9", "pop8", "pop7", "pop6", "pop5", "pop4", "pop3", "pop2", "pop1"]
+        let elements6 = document.getElementsByClassName('pop');
+
+        popID.forEach(function(id, i) {
+        elements6[i].setAttribute('id', id);
+        });
 
 
     // Diamond and Pearl Series
@@ -614,10 +639,9 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'dp');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -642,6 +666,14 @@ axios
             document.getElementById('dpDiv').append(aDiv1);
 
         }
+
+    // Assigning the correct ID to each card set        
+        let dpID = ["dp7", "dp6", "dp5", "dp4", "dp3", "dp2", "dp1", "dpp"]
+        let elements7 = document.getElementsByClassName('dp');
+
+        dpID.forEach(function(id, i) {
+        elements7[i].setAttribute('id', id);
+        });
 
 
     // Ruby and Sapphire Series
@@ -678,10 +710,9 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'rs');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -706,6 +737,14 @@ axios
             document.getElementById('rsDiv').append(aDiv1);
 
         }
+
+    // Assigning the correct ID to each card set        
+        let rsID = ["ex16", "ex15", "ex14", "ex13", "ex12", "ex11", "ex10", "ex9", "ex8", "ex7", "ex6", "ex5", "ex4", "np", "ex3", "ex2", "ex1"]
+        let elements8 = document.getElementsByClassName('rs');
+
+        rsID.forEach(function(id, i) {
+        elements8[i].setAttribute('id', id);
+        });
 
 
     // e-Card Set Series
@@ -742,10 +781,9 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'eCard');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -770,6 +808,14 @@ axios
             document.getElementById('eCardDiv').append(aDiv1);
 
         }
+
+    // Assigning the correct ID to each card set        
+        let eCardID = ["ecard3", "ecard2", "ecard1"]
+        let elements9 = document.getElementsByClassName('eCard');
+
+        eCardID.forEach(function(id, i) {
+        elements9[i].setAttribute('id', id);
+        });
 
 
     // Legendary Set Series
@@ -806,10 +852,10 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'legend');
+            aDiv1.id = 'base6';
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -870,10 +916,9 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'neo');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -898,6 +943,14 @@ axios
             document.getElementById('neoDiv').append(aDiv1);
 
         }
+
+    // Assigning the correct ID to each card set        
+        let neoID = ["neo4", "neo3", "si1", "neo2", "neo1"]
+        let elements10 = document.getElementsByClassName('neo');
+
+        neoID.forEach(function(id, i) {
+        elements10[i].setAttribute('id', id);
+        });
 
 
     // Gym Set Series
@@ -934,10 +987,9 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'gym');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -962,6 +1014,14 @@ axios
             document.getElementById('gymDiv').append(aDiv1);
 
         }
+
+    // Assigning the correct ID to each card set        
+        let gymID = ["gym2", "gym1"]
+        let elements11 = document.getElementsByClassName('gym');
+
+        gymID.forEach(function(id, i) {
+        elements11[i].setAttribute('id', id);
+        });
 
 
     // Base Set Series
@@ -998,10 +1058,9 @@ axios
             let symbolImg = document.createElement('img');
 
 
-            setDiv.classList.add("test");
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
-            aDiv1.classList.add('card');
+            aDiv1.classList.add('card', 'base');
             aDiv1.setAttribute('href', "");
             setImage.classList.add('card-image');
             setContent.classList.add('card-content');
@@ -1026,6 +1085,14 @@ axios
             document.getElementById('baseDiv').append(aDiv1);
 
         }
+
+        // Assigning the correct ID to each card set        
+            let baseID = ["base5", "base4", "base3", "basep", "base2", "base1"]
+            let elements12 = document.getElementsByClassName('base');
+    
+            baseID.forEach(function(id, i) {
+            elements12[i].setAttribute('id', id);
+            });
     });
 
 }
