@@ -65,9 +65,9 @@ axios
         document.getElementById("mySidenav").append(swshSideHead);
         
         // Adds a Div for the SideNav Cards to go 
-        let sideNavImg = document.createElement('div');
-        sideNavImg.id = "sideNavImg";
-        document.getElementById("mySidenav").append(sideNavImg);
+        let swshSideDiv = document.createElement('div');
+        swshSideDiv.id = "swshSideDiv";
+        document.getElementById("mySidenav").append(swshSideDiv);
 
 
         swshResult.reverse()
@@ -144,7 +144,7 @@ axios
             setSideNameDiv.appendChild(symbolSideImg);
 
             document.getElementById('swshDiv').append(aDiv1);
-            document.getElementById('sideNavImg').append(sideDiv1);
+            document.getElementById('swshSideDiv').append(sideDiv1);
 
         }
 
@@ -179,6 +179,17 @@ axios
         document.getElementById("buttonResults").append(smDiv);
 
 
+        // Adds a Header for SideNav Cards
+        let smSideHead = document.createElement('h2');
+        smSideHead.classList.add('cardHead');
+        smSideHead.innerHTML = "Sun & Moon Series";
+        document.getElementById("mySidenav").append(smSideHead);
+        
+        // Adds a Div for the SideNav Cards to go 
+        let smSideDiv = document.createElement('div');
+        smSideDiv.id = "smSideDiv";
+        document.getElementById("mySidenav").append(smSideDiv);
+
         smResult.reverse()
         for (let j = 0; j < smResult.length; j++) {
 
@@ -198,6 +209,15 @@ axios
             let setRelease = document.createElement('p');
             let symbolImg = document.createElement('img');
 
+            let sideDiv1 = document.createElement('div');
+            let setSideDiv = document.createElement('div');
+            let setSideImage = document.createElement('div');
+            let logoSideImg = document.createElement('img');
+            let setSideContent = document.createElement('div');
+            let setSideNameDiv = document.createElement('div');
+            let setSideName = document.createElement('p');
+            let setSideRelease = document.createElement('p');
+            let symbolSideImg = document.createElement('img');
 
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
@@ -208,10 +228,17 @@ axios
             symbolImg.classList.add('symbolImg');
             symbolImg.setAttribute('src', symbol);
 
+            logoSideImg.setAttribute('src', logo);
+            logoSideImg.classList.add('setSideImg');
+            sideDiv1.classList.add('card', 'sunMoonSide');
+            sideDiv1.setAttribute('name', "button");
+            setSideImage.classList.add('card-image');
+            setSideContent.classList.add('card-content');
+            symbolSideImg.classList.add('symbolSideImg');
+            symbolSideImg.setAttribute('src', symbol);
 
             setName.innerHTML = number;
             setRelease.innerHTML = "Released: " + release;
-
 
             aDiv1.appendChild(setDiv);
             setDiv.appendChild(setImage);
@@ -222,9 +249,18 @@ axios
             setNameDiv.appendChild(setRelease);
             setNameDiv.appendChild(symbolImg);
 
+            sideDiv1.appendChild(setSideDiv);
+            setSideDiv.appendChild(setSideImage);
+            setSideImage.appendChild(logoSideImg);
+            setSideDiv.appendChild(setSideContent);
+            setSideContent.appendChild(setSideNameDiv);
+            setSideNameDiv.appendChild(setSideName);
+            setSideNameDiv.appendChild(setSideRelease);
+            setSideNameDiv.appendChild(symbolSideImg);
+
 
             document.getElementById('smDiv').append(aDiv1);
-
+            document.getElementById('smSideDiv').append(sideDiv1);
         }
 
     // Assigning the correct ID to each card set        
@@ -234,6 +270,15 @@ axios
         smID.forEach(function(id, i) {
         elements1[i].setAttribute('id', id);
         });
+
+    // Assigning the correct ID to each card set        
+        let smIDSide = ["sm12", "sm115", "sma", "sm11", "sm10", "det1", "sm9", "sm8", "sm75", "sm7", "sm6", "sm5", "sm4", "sm35", "sm3", "sm2", "sm1", "smp"]
+        let sideElements1 = document.getElementsByClassName('sunMoonSide');
+
+        smIDSide.forEach(function(id, i) {
+        sideElements1[i].setAttribute('id', id);
+        });
+
 
 
     // XY Series
@@ -249,6 +294,16 @@ axios
         xyDiv.id = "xyDiv";
         document.getElementById("buttonResults").append(xyDiv);
 
+        // Adds a Header for SideNav Cards
+        let xySideHead = document.createElement('h2');
+        xySideHead.classList.add('cardHead');
+        xySideHead.innerHTML = "XY Series";
+        document.getElementById("mySidenav").append(xySideHead);
+        
+        // Adds a Div for the SideNav Cards to go 
+        let xySideDiv = document.createElement('div');
+        xySideDiv.id = "xySideDiv";
+        document.getElementById("mySidenav").append(xySideDiv);
 
         xyResult.reverse()
         for (let j = 0; j < xyResult.length; j++) {
@@ -269,6 +324,16 @@ axios
             let setRelease = document.createElement('p');
             let symbolImg = document.createElement('img');
 
+            let sideDiv1 = document.createElement('div');
+            let setSideDiv = document.createElement('div');
+            let setSideImage = document.createElement('div');
+            let logoSideImg = document.createElement('img');
+            let setSideContent = document.createElement('div');
+            let setSideNameDiv = document.createElement('div');
+            let setSideName = document.createElement('p');
+            let setSideRelease = document.createElement('p');
+            let symbolSideImg = document.createElement('img');
+
 
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
@@ -279,10 +344,17 @@ axios
             symbolImg.classList.add('symbolImg');
             symbolImg.setAttribute('src', symbol);
 
+            logoSideImg.setAttribute('src', logo);
+            logoSideImg.classList.add('setSideImg');
+            sideDiv1.classList.add('card', 'xySide');
+            sideDiv1.setAttribute('name', "button");
+            setSideImage.classList.add('card-image');
+            setSideContent.classList.add('card-content');
+            symbolSideImg.classList.add('symbolSideImg');
+            symbolSideImg.setAttribute('src', symbol);
 
             setName.innerHTML = number;
             setRelease.innerHTML = "Released: " + release;
-
 
             aDiv1.appendChild(setDiv);
             setDiv.appendChild(setImage);
@@ -293,8 +365,17 @@ axios
             setNameDiv.appendChild(setRelease);
             setNameDiv.appendChild(symbolImg);
 
+            sideDiv1.appendChild(setSideDiv);
+            setSideDiv.appendChild(setSideImage);
+            setSideImage.appendChild(logoSideImg);
+            setSideDiv.appendChild(setSideContent);
+            setSideContent.appendChild(setSideNameDiv);
+            setSideNameDiv.appendChild(setSideName);
+            setSideNameDiv.appendChild(setSideRelease);
+            setSideNameDiv.appendChild(symbolSideImg);
 
             document.getElementById('xyDiv').append(aDiv1);
+            document.getElementById('xySideDiv').append(sideDiv1);
 
         }
 
@@ -306,6 +387,14 @@ axios
         elements2[i].setAttribute('id', id);
         });
 
+    // Assigning the correct ID to each card set        
+        let xyIDSide = ["xy12", "xy11", "g1", "xy10", "xy9", "xy8", "xy7", "xy6", "dc1", "xy5", "xy4", "xy3", "xy2", "xy1", "xy0", "xyp"]
+        let sideElements2 = document.getElementsByClassName('xySide');
+
+        xyIDSide.forEach(function(id, i) {
+        sideElements2[i].setAttribute('id', id);
+        });
+    
 
     // Black and White Series
 
@@ -320,6 +409,16 @@ axios
         bwDiv.id = "bwDiv";
         document.getElementById("buttonResults").append(bwDiv);
 
+        // Adds a Header for SideNav Cards
+        let bwSideHead = document.createElement('h2');
+        bwSideHead.classList.add('cardHead');
+        bwSideHead.innerHTML = "Black & White Series";
+        document.getElementById("mySidenav").append(bwSideHead);
+        
+        // Adds a Div for the SideNav Cards to go 
+        let bwSideDiv = document.createElement('div');
+        bwSideDiv.id = "bwSideDiv";
+        document.getElementById("mySidenav").append(bwSideDiv);
 
         bwResult.reverse()
         for (let j = 0; j < bwResult.length; j++) {
@@ -340,6 +439,15 @@ axios
             let setRelease = document.createElement('p');
             let symbolImg = document.createElement('img');
 
+            let sideDiv1 = document.createElement('div');
+            let setSideDiv = document.createElement('div');
+            let setSideImage = document.createElement('div');
+            let logoSideImg = document.createElement('img');
+            let setSideContent = document.createElement('div');
+            let setSideNameDiv = document.createElement('div');
+            let setSideName = document.createElement('p');
+            let setSideRelease = document.createElement('p');
+            let symbolSideImg = document.createElement('img');
 
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
@@ -350,10 +458,17 @@ axios
             symbolImg.classList.add('symbolImg');
             symbolImg.setAttribute('src', symbol);
 
+            logoSideImg.setAttribute('src', logo);
+            logoSideImg.classList.add('setSideImg');
+            sideDiv1.classList.add('card', 'bwSide');
+            sideDiv1.setAttribute('name', "button");
+            setSideImage.classList.add('card-image');
+            setSideContent.classList.add('card-content');
+            symbolSideImg.classList.add('symbolSideImg');
+            symbolSideImg.setAttribute('src', symbol);
 
             setName.innerHTML = number;
             setRelease.innerHTML = "Released: " + release;
-
 
             aDiv1.appendChild(setDiv);
             setDiv.appendChild(setImage);
@@ -364,8 +479,17 @@ axios
             setNameDiv.appendChild(setRelease);
             setNameDiv.appendChild(symbolImg);
 
+            sideDiv1.appendChild(setSideDiv);
+            setSideDiv.appendChild(setSideImage);
+            setSideImage.appendChild(logoSideImg);
+            setSideDiv.appendChild(setSideContent);
+            setSideContent.appendChild(setSideNameDiv);
+            setSideNameDiv.appendChild(setSideName);
+            setSideNameDiv.appendChild(setSideRelease);
+            setSideNameDiv.appendChild(symbolSideImg);
 
             document.getElementById('bwDiv').append(aDiv1);
+            document.getElementById('bwSideDiv').append(sideDiv1);
 
         }
 
@@ -375,6 +499,14 @@ axios
 
         bwID.forEach(function(id, i) {
         elements3[i].setAttribute('id', id);
+        });
+
+    // Assigning the correct ID to each card set        
+        let bwIDSide = ["bw11", "bw10", "bw9", "bw8", "bw7", "dv1", "bw6", "bw5", "bw4", "bw3", "bw2", "bw1", "bwp"]
+        let sideElements3 = document.getElementsByClassName('bwSide');
+
+        bwIDSide.forEach(function(id, i) {
+        sideElements3[i].setAttribute('id', id);
         });
 
 
@@ -390,6 +522,17 @@ axios
         let callDiv = document.createElement('div');
         callDiv.id = "callDiv";
         document.getElementById("buttonResults").append(callDiv);
+
+        // Adds a Header for SideNav Cards
+        let callSideHead = document.createElement('h2');
+        callSideHead.classList.add('cardHead');
+        callSideHead.innerHTML = "Call of Legends Series";
+        document.getElementById("mySidenav").append(callSideHead);
+        
+        // Adds a Div for the SideNav Cards to go 
+        let callSideDiv = document.createElement('div');
+        callSideDiv.id = "callSideDiv";
+        document.getElementById("mySidenav").append(callSideDiv);
 
 
         callResult.reverse()
@@ -411,6 +554,15 @@ axios
             let setRelease = document.createElement('p');
             let symbolImg = document.createElement('img');
 
+            let sideDiv1 = document.createElement('div');
+            let setSideDiv = document.createElement('div');
+            let setSideImage = document.createElement('div');
+            let logoSideImg = document.createElement('img');
+            let setSideContent = document.createElement('div');
+            let setSideNameDiv = document.createElement('div');
+            let setSideName = document.createElement('p');
+            let setSideRelease = document.createElement('p');
+            let symbolSideImg = document.createElement('img');
 
             logoImg.setAttribute('src', logo);
             logoImg.classList.add('setImg');
@@ -422,10 +574,18 @@ axios
             symbolImg.classList.add('symbolImg');
             symbolImg.setAttribute('src', symbol);
 
+            logoSideImg.setAttribute('src', logo);
+            logoSideImg.classList.add('setSideImg');
+            sideDiv1.classList.add('card', 'callSide');
+            sideDiv1.id = "col1";
+            sideDiv1.setAttribute('name', "button");
+            setSideImage.classList.add('card-image');
+            setSideContent.classList.add('card-content');
+            symbolSideImg.classList.add('symbolSideImg');
+            symbolSideImg.setAttribute('src', symbol);
 
             setName.innerHTML = number;
             setRelease.innerHTML = "Released: " + release;
-
 
             aDiv1.appendChild(setDiv);
             setDiv.appendChild(setImage);
@@ -436,8 +596,17 @@ axios
             setNameDiv.appendChild(setRelease);
             setNameDiv.appendChild(symbolImg);
 
+            sideDiv1.appendChild(setSideDiv);
+            setSideDiv.appendChild(setSideImage);
+            setSideImage.appendChild(logoSideImg);
+            setSideDiv.appendChild(setSideContent);
+            setSideContent.appendChild(setSideNameDiv);
+            setSideNameDiv.appendChild(setSideName);
+            setSideNameDiv.appendChild(setSideRelease);
+            setSideNameDiv.appendChild(symbolSideImg);
 
             document.getElementById('callDiv').append(aDiv1);
+            document.getElementById('callSideDiv').append(sideDiv1);
 
         }
 
