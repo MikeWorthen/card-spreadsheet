@@ -43,41 +43,40 @@
     </div>
 
     <!-- Use any element to open the sidenav -->
-    <span onclick="openNav()">open</span>
-
-
+    <!-- <span onclick="openNav()">Browse Sets</span> -->
+    
     <div id="main">
-
-
+        
+        
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="/">Card Collect</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/users/register"><span class="fas fa-user"></span> Sign Up</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/users/login"><span class="fas fa-sign-in-alt"></span> Sign In</a>
-                        </li>
-                    </ul>
-                </div>
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/users/register"><span class="fas fa-user"></span> Sign Up</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/users/login"><span class="fas fa-sign-in-alt"></span> Sign In</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -86,15 +85,16 @@
                 <div class="container">
                     <div class="set-gallery">
                         <div id="buttonResults">
-
+                            
                         </div>
-
+                        
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="container initial">
+                <div class="btn btn-lg btn-primary"><span onclick="openNav()">Browse Sets</span></div>
             <div id="target"></div>
             <div id="collection">
                 <div class="checks"><input id="checkAll" type="checkbox" onClick="toggle(this);" value="Select All"
