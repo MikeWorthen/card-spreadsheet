@@ -235,6 +235,9 @@ function cardSets(e) {
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
 
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
+
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
                 setImage.appendChild(logoImg);
@@ -348,6 +351,9 @@ function cardSets(e) {
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
 
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
+
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
                 setImage.appendChild(logoImg);
@@ -459,6 +465,9 @@ function cardSets(e) {
 
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
+
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -575,6 +584,9 @@ function cardSets(e) {
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
 
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
+
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
                 setImage.appendChild(logoImg);
@@ -671,6 +683,9 @@ function cardSets(e) {
 
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
+
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -784,6 +799,9 @@ function cardSets(e) {
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
 
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
+
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
                 setImage.appendChild(logoImg);
@@ -895,6 +913,9 @@ function cardSets(e) {
 
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
+
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -1009,6 +1030,9 @@ function cardSets(e) {
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
 
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
+
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
                 setImage.appendChild(logoImg);
@@ -1121,6 +1145,9 @@ function cardSets(e) {
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
 
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
+
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
                 setImage.appendChild(logoImg);
@@ -1155,7 +1182,7 @@ function cardSets(e) {
             let rsIDSide = ["ex16", "ex15", "ex14", "ex13", "ex12", "ex11", "ex10", "ex9", "ex8", "ex7", "ex6", "ex5", "ex4", "np", "ex3", "ex2", "ex1"]
             let sideElements8 = document.getElementsByClassName('rsSide');
 
-            rsID.forEach(function (id, i) {
+            rsIDSide.forEach(function (id, i) {
                 sideElements8[i].setAttribute('id', id);
             });
 
@@ -1232,6 +1259,9 @@ function cardSets(e) {
 
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
+
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -1347,6 +1377,9 @@ function cardSets(e) {
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
 
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
+
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
                 setImage.appendChild(logoImg);
@@ -1442,6 +1475,9 @@ function cardSets(e) {
 
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
+
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -1555,6 +1591,9 @@ function cardSets(e) {
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
 
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
+
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
                 setImage.appendChild(logoImg);
@@ -1666,6 +1705,9 @@ function cardSets(e) {
 
                 setName.innerHTML = number;
                 setRelease.innerHTML = "Released: " + release;
+
+                setSideName.innerHTML = number;
+                setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
