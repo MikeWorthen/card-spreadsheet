@@ -3,14 +3,19 @@ let butID = []
 $(document).ready(function() { 
   
     $("button").click(function() { 
-         
-        var x = $("input:text").val();  
-        console.log(x);
-        butID.push(x);
+        event.preventDefault(); 
+        var val = $("input:text").val();  
+        butID.push(val);
         cardSearch();
+        clearArray();
     }); 
 
 }); 
+
+function clearArray(e) {
+    document.getElementById("demo").innerHTML = "";
+    butID = [];
+}
 
 function cardSearch(e) {
 
@@ -30,8 +35,8 @@ axios
 
             let targetResult = {
                 name: pokemon[i].name,
-                symbol: pokemon[i].symbolUrl,
                 imageUrl: pokemon[i].imageUrlHiRes,
+                set: pokemon[i].set,
 
             }
             newResult.push(targetResult);
@@ -40,33 +45,31 @@ axios
 
     for (let j = 0; j < newResult.length; j++) {
 
-        // let name = newResult[j].name;
+        let name = newResult[j].name;
         let imageUrl = newResult[j].imageUrl;
-        // let symbol = newResult[j].symbol;
+        let set = newResult[j].set;
 
         let aDiv1 = document.createElement('div');
-        // let setDiv = document.createElement('div');
-        // let setImage = document.createElement('div');
         let logoImg = document.createElement('img');
-        // let setContent = document.createElement('div');
-        // let setNameDiv = document.createElement('div');
-        // let symbolImg = document.createElement('img');
+        let infoDiv = document.createElement('div');
+        let cardName = document.createElement('p');
+        let setName = document.createElement('p');
 
         logoImg.setAttribute('src', imageUrl);
         logoImg.classList.add('testImg');
         aDiv1.classList.add('test');
         aDiv1.id = "testCard";
-        // aDiv1.setAttribute('name', "button");
-        // setImage.classList.add('card-image');
-        // setContent.classList.add('card-content');
-        // symbolImg.classList.add('symbolImg');
+        infoDiv.classList.add('setNameDiv');
+        cardName.classList.add('cardName');
+        setName.classList.add('setName');
 
+        cardName.innerHTML = name;
+        setName.innerHTML = set;
+       
         aDiv1.appendChild(logoImg);
-        // setDiv.appendChild(setImage);
-        // setImage.appendChild(logoImg);
-        // setDiv.appendChild(setContent);
-        // setContent.appendChild(setNameDiv);
-
+        aDiv1.appendChild(infoDiv);
+        infoDiv.appendChild(cardName);
+        infoDiv.appendChild(setName);
 
         document.getElementById('demo').append(aDiv1);
 
