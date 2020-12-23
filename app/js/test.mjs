@@ -26,15 +26,18 @@ axios
     .get(queryURLSearch)
     .then(function (response) {
         let pokemon = response.data.cards
-        console.log(pokemon)
         let newResult = []
 
 
         // Loop through results, get data we want and push to new array
         for (let i = 0; i < pokemon.length; i++) {
 
+            let noDashResult = {
+                noDash: pokemon[i].name.replace(/-/g, ' ')
+            }
+
             let targetResult = {
-                name: pokemon[i].name,
+                name: noDashResult.noDash,
                 imageUrl: pokemon[i].imageUrlHiRes,
                 set: pokemon[i].set,
 
