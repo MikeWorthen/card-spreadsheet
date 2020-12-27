@@ -16,7 +16,8 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="spreadsheet.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Oswald" rel="stylesheet">
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://kit.fontawesome.com/fabf50c33e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -63,7 +64,11 @@
          Card Search
         </h1>
 
-          <input type="text" name="user" placeholder="Search for card..." value=""><button>Search</button>
+          <input id="test" type="text" name="user" placeholder="Search for card..." value=""><button>Search</button>
+
+        <button onclick="myFunction()">Try it </button>
+
+        <div id="mike"></div>
 
         <div id="demo"></div>
         
@@ -118,9 +123,21 @@
     <!-- Optional JavaScript -->
 
 
+<script>
+
+  var ages = [32, 33, 16, 40];
+
+  function checkAdult(age) {
+    return age >= 18;
+  }
+  
+  function myFunction() {
+    document.getElementById("mike").innerHTML = ages.filter(checkAdult);
+  }</script>
+
     <script type="module" src="test.mjs"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://kit.fontawesome.com/adb19d7eeb.js" crossorigin="anonymous"></script>
+    
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

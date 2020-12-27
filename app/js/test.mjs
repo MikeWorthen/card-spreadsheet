@@ -1,4 +1,6 @@
+
 let butID = []
+console.log(butID)
 
 $(document).ready(function() { 
   
@@ -9,48 +11,55 @@ $(document).ready(function() {
         cardSearch();
         clearArray();
     }); 
-
+    
 }); 
 
 function clearArray(e) {
     document.getElementById("demo").innerHTML = "";
     butID = [];
 }
+let queryURLSearch = "https://api.pokemontcg.io/v1/cards?name=";
+console.log(queryURLSearch)
 
 function cardSearch(e) {
 
-let queryURLSearch = "https://api.pokemontcg.io/v1/cards?name=" + butID[0];
-console.log(queryURLSearch)
+// let queryURLSearch = "https://api.pokemontcg.io/v1/cards?name=" + butID[0];
+
+let newResult = []
+console.log(newResult)
+let searchResult = []
+console.log(searchResult)
 
 axios
-    .get(queryURLSearch)
-    .then(function (response) {
-        let pokemon = response.data.cards
-        let newResult = []
-
-
-        // Loop through results, get data we want and push to new array
-        for (let i = 0; i < pokemon.length; i++) {
-
-            let noDashResult = {
-                noDash: pokemon[i].name.replace(/-/g, ' ')
-            }
-
-            let targetResult = {
-                name: noDashResult.noDash,
-                imageUrl: pokemon[i].imageUrlHiRes,
-                set: pokemon[i].set,
-
-            }
-            newResult.push(targetResult);
+.get(queryURLSearch)
+.then(function (response) {
+    let pokemon = response.data.cards
+    console.log(pokemon)
+    
+    // Loop through results, get data we want and push to new array
+    for (let i = 0; i < pokemon.length; i++) {
+        
+        let noDashResult = {
+            noDash: pokemon[i].name.replace(/-/g, ' ')
         }
- 
-
-    for (let j = 0; j < newResult.length; j++) {
-
-        let name = newResult[j].name;
-        let imageUrl = newResult[j].imageUrl;
-        let set = newResult[j].set;
+        
+        let targetResult = {
+            name: noDashResult.noDash,
+            imageUrl: pokemon[i].imageUrlHiRes,
+            set: pokemon[i].set, 
+        }
+        
+        newResult.push(targetResult);
+        
+    }
+    
+    
+    function createCards() {
+        for (let j = 0; j < searchResult.length; j++) {
+            
+        let name = searchResult[j].name;
+        let imageUrl = searchResult[j].imageUrl;
+        let set = searchResult[j].set;
 
         let aDiv1 = document.createElement('div');
         let logoImg = document.createElement('img');
@@ -77,7 +86,21 @@ axios
         document.getElementById('demo').append(aDiv1);
 
     }
+}
 
+
+    let testFilter = newResult.filter(answer => {
+        return answer.name.includes($("input:text").val())
+        
+    })
+    searchResult.push(testFilter)
+    console.log(testFilter)
+
+
+createCards(); 
+
+    
 });
+
 
 }
