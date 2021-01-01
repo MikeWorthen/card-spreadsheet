@@ -18,7 +18,7 @@ function clearArray(e) {
     document.getElementById("demo").innerHTML = "";
     butID = [];
 }
-let queryURLSearch = "https://api.pokemontcg.io/v1/cards?name=";
+let queryURLSearch = "https://api.pokemontcg.io/v1/cards?pageSize=300?name=";
 console.log(queryURLSearch)
 
 function cardSearch(e) {
@@ -29,6 +29,7 @@ let newResult = []
 console.log(newResult)
 let searchResult = []
 console.log(searchResult)
+
 
 axios
 .get(queryURLSearch)
@@ -52,9 +53,14 @@ axios
         newResult.push(targetResult);
         
     }
+
+    let testFilter = newResult.filter(answer => 
+      answer.name.includes($("input:text").val())
+    );
+    console.log(testFilter)
+    searchResult.push(testFilter);
     
-    
-    function createCards() {
+
         for (let j = 0; j < searchResult.length; j++) {
             
         let name = searchResult[j].name;
@@ -86,20 +92,7 @@ axios
         document.getElementById('demo').append(aDiv1);
 
     }
-}
-
-
-    let testFilter = newResult.filter(answer => {
-        return answer.name.includes($("input:text").val())
-        
-    })
-    searchResult.push(testFilter)
-    console.log(testFilter)
-
-
-createCards(); 
-
-    
+  
 });
 
 
