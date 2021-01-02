@@ -20,7 +20,7 @@ function clearArray(e) {
 
 function cardSearch(e) {
 
-    let queryURLSearch = "https://api.pokemontcg.io/v1/cards?pageSize=300?name="
+    let queryURLSearch = "https://api.pokemontcg.io/v1/cards?pageSize=1000?name="
     console.log(queryURLSearch)
     
 
@@ -51,15 +51,23 @@ function cardSearch(e) {
             newResult.push(targetResult);
             
         }
-        let similarities = nameResult.filter(x => butID.includes(x));
-        console.log(similarities)
+
+        // This for loop and if/else compares the input value and the api call to produce the correct cards
+        let finalResult = [];
+        console.log(finalResult);
+
+        for (let i = 0; i < newResult.length; i++) {
+            if (newResult[i].name.includes(butID)) {
+            finalResult.push(newResult[i]);
+        }
+    }
         
-        
-        for (let j = 0; j < newResult.length; j++) {
+        // This for loop creates the html for each card
+        for (let j = 0; j < finalResult.length; j++) {
             
-            let name = newResult[j].name;
-            let imageUrl = newResult[j].imageUrl;
-            let set = newResult[j].set;
+            let name = finalResult[j].name;
+            let imageUrl = finalResult[j].imageUrl;
+            let set = finalResult[j].set;
             
             let aDiv1 = document.createElement('div');
             let logoImg = document.createElement('img');
