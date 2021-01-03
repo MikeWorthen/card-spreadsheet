@@ -1,16 +1,22 @@
 let butID = []
 console.log(butID)
 
+let testID = []
+console.log(testID)
+
+
 $(document).ready(function() { 
-  
+    
     $("button").click(function() { 
         event.preventDefault(); 
         var val = $("input:text").val();  
         butID.push(val);
+        let newVal = val.replace(/ .*/,'');
+        testID.push(newVal);
         cardSearch();
         clearArray();
     }); 
-
+    
 }); 
 
 function clearArray(e) {
@@ -20,7 +26,7 @@ function clearArray(e) {
 
 function cardSearch(e) {
 
-    let queryURLSearch = "https://api.pokemontcg.io/v1/cards?pageSize=1000?name="
+    let queryURLSearch = "https://api.pokemontcg.io/v1/cards?name=" + testID[0]
     console.log(queryURLSearch)
     
 
