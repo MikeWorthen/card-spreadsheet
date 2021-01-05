@@ -19,6 +19,27 @@ $(document).ready(function () {
 
 });
 
+document.getElementById("test").addEventListener("keyup", function () {
+    let nameInput = document.getElementById('test').value;
+    if (nameInput != "") {
+        document.getElementById('searchBtn').removeAttribute("disabled");
+    } else {
+        document.getElementById('searchBtn').setAttribute("disabled", null);
+    }
+});
+
+
+// Execute a function when the user releases a key on the keyboard
+var input = document.getElementById("test");
+
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("searchBtn").click();
+  }
+});
+
 
 
 function clearArray(e) {
@@ -49,6 +70,7 @@ function cardSearch(e) {
 
                 let targetResult = {
                     name: noDashResult.noDash.toLowerCase(),
+                    name1: noDashResult.noDash,
                     imageUrl: pokemon[i].imageUrlHiRes,
                     set: pokemon[i].set,
 
@@ -61,6 +83,7 @@ function cardSearch(e) {
             let finalResult = [];
             console.log(finalResult);
 
+
             for (let i = 0; i < newResult.length; i++) {
                 if (newResult[i].name.includes(butID)) {
                     finalResult.push(newResult[i]);
@@ -71,7 +94,7 @@ function cardSearch(e) {
             // This for loop creates the html for each card
             for (let j = 0; j < finalResult.length; j++) {
 
-                let name = finalResult[j].name;
+                let name = finalResult[j].name1
                 let imageUrl = finalResult[j].imageUrl;
                 let set = finalResult[j].set;
 
