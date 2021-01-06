@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Oswald" rel="stylesheet">
-    
-        <!-- external CSS -->
-        <!-- <link rel="stylesheet" type="text/css" href="sidenav.css"> -->
-        <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Oswald" rel="stylesheet">
+
+    <!-- external CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="sidenav.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
     <script src="https://kit.fontawesome.com/adb19d7eeb.js" crossorigin="anonymous"></script>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
-          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -39,61 +39,82 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="/">Card Collect</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/users/register"><span class="fas fa-user"></span> Sign Up</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="/users/login"><span class="fas fa-sign-in-alt"></span> Sign In</a>
-                </li>
-              </ul>
+        <div class="container">
+            <a class="navbar-brand" href="/">Kanto Kollector's</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/users/register"><span class="fas fa-user"></span> Sign Up</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/users/login"><span class="fas fa-sign-in-alt"></span> Sign In</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-</div>
+    <div class="container searchCon">
+            <div class="search-form">
+                    <span class="form-control-wrap">
+                        <input id="cardInput" class="search-control" type="text" name="user" placeholder="Search for card..." value=""><button id="searchBtn"
+                            disabled class="submit"><i class="fas fa-chevron-right"></i></button>
+                    </span>
+                </div>
+    </div>
+    </div>
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Card Collect Spreadsheets</h1>
-            <br>
-            <p>On this page you will be able to create your own spreadsheets to track your Card sets and keep track of your investments/sales of cards.</p>
-            <a id="sets" class="btn btn-lg btn-primary" href="/cardSets" role="button">Browse Sets</a>
-            <div class="charzDiv"><img class="charzImg"src="charizard.png"  height="400px" alt="charizard"></div>
+            <h1>About Kanto Kollector's</h1>
+            <div class="aboutText">
+                <p>Kanto Kollector's is the #1 spot for Pokemon Card collectors who need a place to keep track of their
+                    collection and want to meet other like minded collectors.
+                    <br>
+                    <br>
+                    <strong>Features include:</strong>
+                </p>
+                <ul>
+                    <li>Collection Spreadsheets</li>
+                    <li>Card Expense Tracker</li>
+                    <li>Browse Sets</li>
+                    <li>Search Individual Cards</li>
+                    <li>Chat With Other's Forum</li>
+                </ul>
+            </div>
         </div>
     </div>
-        
-          <!-- Use any element to open the sidenav -->
-          <!-- <span onclick="openNav()">open</span>
-
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-   
-        </div>
-
-
-        <div class="container">
-            <div id="buttonResults">
-
+    <div class="container second">
+        <div class="row">
+            <div class="col-8">
+                <a id="sets" class="btn btn-lg btn-primary" href="/cardSets" role="button">Browse Sets</a>
+                <!-- <div class="charzDiv"><img class="charzImg"src="charizard.png"  height="400px" alt="charizard"></div> -->
             </div>
-        </div> -->
-    
+            <div class="col-4">
+                <h4>Find a Card</h4>
+                <br>
+                <input id="test" type="text" name="user" placeholder="Search for card..." value=""><button
+                    id="searchBtn" disabled>Search</button>
+                <div id="demo"></div>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <!-- Footer -->
