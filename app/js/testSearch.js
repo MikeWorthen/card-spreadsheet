@@ -19,8 +19,8 @@ $(document).ready(function () {
 
 });
 
-document.getElementById("test").addEventListener("keyup", function () {
-    let nameInput = document.getElementById('test').value;
+document.getElementById("cardInput").addEventListener("keyup", function () {
+    let nameInput = document.getElementById('cardInput').value;
     if (nameInput != "") {
         document.getElementById('searchBtn').removeAttribute("disabled");
     } else {
@@ -30,7 +30,7 @@ document.getElementById("test").addEventListener("keyup", function () {
 
 
 // Execute a function when the user releases a key on the keyboard
-var input = document.getElementById("test");
+var input = document.getElementById("cardInput");
 
 input.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
