@@ -1,5 +1,22 @@
 /* Set Cards Styling */
 
+/* Test Card Search Cards */
+.testImg {
+    height: 250px;
+    width: 200px;
+    margin: 20px;
+}
+
+#demo {
+    margin: 0;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
 /* Base Set */
 #baseDiv .card .card-image img {
     max-height: 100%;

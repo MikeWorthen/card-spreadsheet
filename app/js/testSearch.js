@@ -65,7 +65,7 @@ function cardSearch(e) {
             for (let i = 0; i < pokemon.length; i++) {
 
                 let noDashResult = {
-                    noDash: pokemon[i].name.replace(/-/g, ' ')
+                    noDash: pokemon[i].name
                 }
 
                 let targetResult = {
