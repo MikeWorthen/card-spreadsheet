@@ -1746,6 +1746,7 @@ function cardSets(e) {
             baseIDSide.forEach(function (id, i) {
                 sideElements12[i].setAttribute('id', id);
             });
+
         });
 
 }

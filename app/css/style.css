@@ -161,7 +161,7 @@ h1{
 
 /* search form */
 .search-form{
-    width: 25%;
+    width: 35%;
     display: inline-block;
     background-color: #eee;
     position: relative;
@@ -205,6 +205,98 @@ h1{
 
 }
 
+.newSets{
+    text-align: center;
+}
+
+/* Sword and Shield Set */
+#swshDiv1 .card .card-image img {
+    max-height: 100%;
+    text-align: center;
+}
+
+#swshDiv1 .card .card-image {
+    padding-top: 15px;
+    text-align: center;
+}
+
+#swshDiv1 a {
+    text-decoration: none;
+}
+
+#swshDiv1 p {
+    font-size: 16px;
+}
+
+#swshDiv1 a:hover {
+    color:  #4a4a4a;
+}
+
+#swshDiv1 {
+    margin: 0;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#swshDiv1 .card {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    flex-basis: calc(33.33% - 2em);
+    max-height: 267.75px;
+    min-width: 250px;
+    cursor: pointer;
+    max-width: 405px;
+}
+
+#swshDiv1 p {
+    font-size: 0.85rem;
+}
+
+.card{
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    color: #4a4a4a;
+    width: 100%;
+    height: auto;
+    max-height: 331.08px;
+    position: relative;
+    text-align: center;
+}
+
+.cardHead1{
+    background: #343a40;
+    color: white;
+    padding: 1rem 1rem;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 1rem;
+}
+
+.card-content{
+    padding: 1.5rem;
+}
+
+.card:hover {
+    transform:scale(1.1);
+    transition-duration: .4s;
+}
+
+
+.setImg1{
+    max-width: 75%;
+    height: 3rem;
+}
+
+.symbolImg1{
+   height: 30px;
+   width: 30px;
+
+}
+
 /* Media Queries */
 @media(max-width: 700px){
 
@@ -243,7 +335,25 @@ h1{
         color: rgb(66, 66, 66);
         cursor: pointer;
         border-radius: 0 20px 20px 0;
-    
+    }
+
+    .search-form .submit {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45px;
+        height: 45px;
+        background-color: #eee;
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        border: 0;
+        color: #ddd;
+        cursor: pointer;
+        border-radius: 0 20px 20px 0;
     }
 }
 
