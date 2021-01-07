@@ -831,20 +831,3 @@ input {
     color: rgba(245, 245, 245, 0.678);
   }
 
-
-/* Test Card Search Cards */
-.testImg {
-    height: 250px;
-    width: 200px;
-    margin: 20px;
-}
-
-#demo {
-    margin: 0;
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style-type: none;
-}
