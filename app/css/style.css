@@ -53,8 +53,8 @@ h1{
 
 .section-2{
     background-image: linear-gradient(rgba(255, 254, 254, 0.678), rgba(250, 250, 250, 0.096)),url(plainsunset.png);
-    background-size: contain;
-
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 0;
 }
 
@@ -183,7 +183,7 @@ h1{
     border: 0;
     outline: 0;
     font-size: 1rem;
-    color: #ddd;
+    color: black;
     background-color: transparent;
     font-family: inherit;
     margin:0;
