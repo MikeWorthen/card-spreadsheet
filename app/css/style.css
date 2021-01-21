@@ -38,23 +38,48 @@ h1{
     margin: 20px 0;
   }
 
-.container{
-    width: 100%;
+.logo{
+    margin-right: 10px;
 }
 
+.navcontain{
+    display: block !important;
+}
+
+#navbarNavDropdown{
+    font-size: 14px;
+}
+
+#my-row {
+    width: 100%;
+    margin: 0;
+}
+
+/* .container{
+    width: 100%;
+} */
+
 .section-1{
-    background-color: whitesmoke;
+    /* background-color: whitesmoke;
     height: fit-content;
-    /* background-repeat: no-repeat; */
     font-size: larger;
     color: black;
+    margin-bottom: 0; */
+    background-image: linear-gradient(rgba(255, 254, 254, 0.678), rgba(250, 250, 250, 0.096)),url(plainsunset.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 0;
 }
 
 .section-2{
-    background-image: linear-gradient(rgba(255, 254, 254, 0.678), rgba(250, 250, 250, 0.096)),url(plainsunset.png);
+    /* background-image: linear-gradient(rgba(255, 254, 254, 0.678), rgba(250, 250, 250, 0.096)),url(plainsunset.png);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 0; */
+    background-color: whitesmoke;
+    height: fit-content;
+    font-size: larger;
+    color: black;
     margin-bottom: 0;
 }
 
@@ -68,6 +93,10 @@ h1{
     font-size: 16px;
 }
 
+.aboutText p{ 
+	text-align: center;
+}
+
 .aboutText ul{
     display: inline-block; 
 	text-align: left; 
@@ -78,6 +107,7 @@ h1{
 }
 
 .pokeDiv{
+    text-align: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
@@ -169,27 +199,34 @@ h1{
 
 /* search form */
 .search-form{
-    width: 66%;
-    display: inline-block;
+    width: 40%;
+    display: block;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
     background-color: #eee;
     position: relative;
     border-radius: 20px;
     line-height: 0;
     margin-top: 1rem;
+    
 }
 
 .search-form .search-control{
-    display: inline-block;
+    /* display: block; */
     border: 0;
     outline: 0;
-    font-size: 1rem;
     color: black;
     background-color: transparent;
     font-family: inherit;
-    margin:0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 3rem 0 1.5rem;
     width: 100%;
-    height: 45px;
+    height: 35px;
     border-radius: 20px;
 }
 
@@ -199,7 +236,7 @@ h1{
     top: 0;
     right: 0;
     width: 45px;
-    height: 45px;
+    height: 35px;
     background-color: #555;
     font-size: 1rem;
     text-align: center;
