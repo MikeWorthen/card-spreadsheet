@@ -10,6 +10,7 @@ function cardSets(e) {
         .get(queryURLTest)
         .then(function (response) {
             let pokemon = response.data.sets
+            console.log(pokemon)
             let newResult = []
 
 
@@ -27,16 +28,16 @@ function cardSets(e) {
             }
 
 
-            let swshResult = [newResult[109], newResult[110], newResult[111], newResult[112], newResult[113], newResult[114]]
-            let smResult = [newResult[91], newResult[92], newResult[93], newResult[94], newResult[95], newResult[96], newResult[97], newResult[98], newResult[99], newResult[100], newResult[101], newResult[102], newResult[103], newResult[104], newResult[105], newResult[106], newResult[107], newResult[108]]
-            let xyResult = [newResult[74], newResult[76], newResult[77], newResult[78], newResult[79], newResult[80], newResult[81], newResult[82], newResult[83], newResult[84], newResult[85], newResult[86], newResult[87], newResult[88], newResult[89], newResult[90]]
-            let bwResult = [newResult[62], newResult[63], newResult[64], newResult[65], newResult[66], newResult[67], newResult[68], newResult[69], newResult[70], newResult[71], newResult[72], newResult[73], newResult[75]]
+            let swshResult = [newResult[113], newResult[114], newResult[115], newResult[116], newResult[117], newResult[118], newResult[119], newResult[120]]
+            let smResult = [newResult[94], newResult[95], newResult[96], newResult[97], newResult[98], newResult[99], newResult[100], newResult[101], newResult[102], newResult[103], newResult[104], newResult[105], newResult[106], newResult[107], newResult[108], newResult[109], newResult[110], newResult[111], newResult[112]]
+            let xyResult = [newResult[76], newResult[78], newResult[79], newResult[80], newResult[81], newResult[82], newResult[83], newResult[84], newResult[85], newResult[86], newResult[87], newResult[88], newResult[89], newResult[90], newResult[91], newResult[92], newResult[93]]
+            let bwResult = [newResult[62], newResult[63], newResult[64], newResult[65], newResult[66], newResult[67], newResult[68], newResult[69], newResult[70], newResult[71], newResult[72], newResult[73], newResult[74], newResult[75], newResult[77]]
             let callResult = [newResult[61]]
             let hgssResult = [newResult[56], newResult[57], newResult[58], newResult[59], newResult[60]]
             let platResult = [newResult[50], newResult[52], newResult[53], newResult[54], newResult[55]]
-            let popResult = [newResult[23], newResult[28], newResult[32], newResult[34], newResult[38], newResult[42], newResult[45], newResult[48], newResult[51]]
+            let popResult = [newResult[23], newResult[28], newResult[32], newResult[35], newResult[38], newResult[42], newResult[45], newResult[48], newResult[51]]
             let dpResult = [newResult[39], newResult[40], newResult[41], newResult[43], newResult[44], newResult[46], newResult[47], newResult[49]]
-            let rsResult = [newResult[17], newResult[18], newResult[19], newResult[20], newResult[21], newResult[22], newResult[24], newResult[25], newResult[26], newResult[27], newResult[29], newResult[30], newResult[31], newResult[33], newResult[35], newResult[36], newResult[37]]
+            let rsResult = [newResult[17], newResult[18], newResult[19], newResult[20], newResult[21], newResult[22], newResult[24], newResult[25], newResult[26], newResult[27], newResult[29], newResult[30], newResult[31], newResult[33], newResult[34], newResult[36], newResult[37]]
             let eCardResult = [newResult[14], newResult[15], newResult[16],]
             let legendResult = [newResult[13]]
             let neoResult = [newResult[8], newResult[9], newResult[10], newResult[11], newResult[12]]
