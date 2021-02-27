@@ -1,13 +1,13 @@
 /* Set Cards Styling */
 
 /* Test Card Search Cards */
-.testImg {
-    height: 250px;
-    width: 200px;
-    margin: 20px;
+.setCardImg {
+    height: 130px;
+    width: 100px;
+    margin: 10px;
 }
 
-#demo {
+#allCards {
     margin: 0;
     margin-bottom: 5rem;
     display: flex;
@@ -15,6 +15,13 @@
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
+}
+
+.cardName {
+    font-size: .75rem;
+    width: 100px;
+    margin: auto;
+    text-align: center;
 }
 
 /* Base Set */
