@@ -34,29 +34,59 @@ function query(e) {
         .get(queryURL)
         .then(function (response) {
             let pokemon = response.data.cards
+            console.log(pokemon);
             let newResult = []
+            console.log(newResult);
 
             // Loop through results, get data we want and push to new array
             for (let i = 0; i < pokemon.length; i++) {
 
-
-                // takes out any letters from a string - allowing for the follwoing parseFloat
                 let noLetterResult = {
                     noLetter: pokemon[i].number.replace(/\D/g, '')
                 }
-
+                
                 let targetResult = {
                     number: parseFloat(noLetterResult.noLetter),
+                    name: pokemon[i].name,
                     letterNumber: pokemon[i].number,
                     name: pokemon[i].name,
                     rarity: pokemon[i].rarity,
-                    imageUrl: pokemon[i].imageUrlHiRes,
+                    imageUrl: pokemon[i].imageUrl,
+                    setName: pokemon[i].setCode,
                 }
-
                 newResult.push(targetResult);
-
             }
 
+        // This code will create the Card Images with their names for an entire Set that is clicked on
+            newResult.sort((a, b) => (a.number) > (b.number) ? 1 : -1);
+            for (let j = 0; j < newResult.length; j++) {
+
+                let name = newResult[j].name;
+                let imageUrl = newResult[j].imageUrl;
+        
+                let aDiv1 = document.createElement('div');
+                let logoImg = document.createElement('img');
+                let infoDiv = document.createElement('div');
+                let cardName = document.createElement('p');
+        
+                logoImg.setAttribute('src', imageUrl);
+                logoImg.classList.add('setCardImg');
+                aDiv1.classList.add('allCards');
+                aDiv1.id = "setCard";
+                infoDiv.classList.add('setNameDiv');
+                cardName.classList.add('cardName');
+        
+                cardName.innerHTML = name;
+               
+                aDiv1.appendChild(logoImg);
+                aDiv1.appendChild(infoDiv);
+                infoDiv.appendChild(cardName);
+        
+                document.getElementById('allCards').append(aDiv1);
+        
+            }
+
+        // The code below creates the Spreadsheet and card image modals
             let modalCount = 0
             let boxCount = 0
 

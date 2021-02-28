@@ -146,7 +146,7 @@ function cardSets(e) {
             }
 
             // Assigning the correct ID to each card set        
-            let swshID = ["swsh4", "swsh35", "swsh3", "swsh2", "swsh1", "swshp"]
+            let swshID = ["swsh45sv", "swsh45", "swsh4", "swsh35", "swsh3", "swsh2", "swsh1", "swshp"]
             let elements = document.getElementsByClassName('swsh');
 
             swshID.forEach(function (id, i) {
@@ -154,7 +154,7 @@ function cardSets(e) {
             });
 
             // Assigning the correct ID to each card set        
-            let swshIDSide = ["swsh4", "swsh35", "swsh3", "swsh2", "swsh1", "swshp"]
+            let swshIDSide = ["swsh45sv", "swsh45", "swsh4", "swsh35", "swsh3", "swsh2", "swsh1", "swshp"]
             let sideElements = document.getElementsByClassName('swshSide');
 
             swshIDSide.forEach(function (id, i) {
