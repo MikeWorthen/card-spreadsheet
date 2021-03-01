@@ -298,13 +298,13 @@ h1 {
     text-align: center;
 }
 
-.cardHead1 {
+/* .cardHead1 {
     background: #343a40;
     color: white;
     padding: 1rem 1rem;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 1rem;
-}
+} */
 
 .card-content {
     padding: 1.5rem;

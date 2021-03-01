@@ -24,6 +24,7 @@
     text-align: center;
 }
 
+
 /* Base Set */
 #baseDiv .card .card-image img {
     max-height: 100%;
@@ -31,7 +32,6 @@
 }
 
 #baseDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -63,9 +63,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* Gym Set */
@@ -75,7 +76,6 @@
 }
 
 #gymDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -107,9 +107,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* Neo Set */
@@ -119,7 +120,6 @@
 }
 
 #neoDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -151,9 +151,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* Legendary Collection Set */
@@ -163,7 +164,6 @@
 }
 
 #legendDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -195,9 +195,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* e-Card Set */
@@ -207,7 +208,6 @@
 }
 
 #eCardDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -239,9 +239,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* Ruby and Sapphire Set */
@@ -251,7 +252,6 @@
 }
 
 #rsDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -283,9 +283,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* Diamond and Pearl Set */
@@ -295,7 +296,6 @@
 }
 
 #dpDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -327,9 +327,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* Pop Series Set */
@@ -339,7 +340,6 @@
 }
 
 #popDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -371,9 +371,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* Platinum Set */
@@ -383,7 +384,6 @@
 }
 
 #platDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -415,9 +415,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* HeartGold SoulSilver Set */
@@ -427,7 +428,6 @@
 }
 
 #hgssDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -459,9 +459,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* Call of Legends Set */
@@ -471,7 +472,6 @@
 }
 
 #callDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -503,9 +503,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* Black and White Set */
@@ -515,7 +516,6 @@
 }
 
 #bwDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -547,9 +547,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* XY Set */
@@ -559,7 +560,6 @@
 }
 
 #xyDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -591,9 +591,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* Sun and Moon Set */
@@ -603,7 +604,6 @@
 }
 
 #smDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -635,9 +635,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 /* Sword and Shield Set */
@@ -647,7 +648,6 @@
 }
 
 #swshDiv .card .card-image {
-    height: 140px;
     padding-top: 15px;
     text-align: center;
 }
@@ -679,9 +679,10 @@
     margin: 1em;
     padding: 1em;
     flex-basis: calc(33.33% - 2em);
-    min-width: 250px;
     cursor: pointer;
-    max-width: 405px;
+    min-width: 250px;
+    max-width: 300px;
+    height: 230px;
 }
 
 .card{
@@ -714,13 +715,20 @@
 
 
 .setImg{
-    max-width: 100%;
-    height: auto;
+    max-width: 75%;
+    height: 4rem;
 }
 
 .symbolImg{
-   height: 40px;
-   width: 40px;
+    height: 30px;
+    width: 30px;
+    margin: auto auto 0;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 /* Spreadsheet styling */
