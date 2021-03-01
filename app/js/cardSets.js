@@ -76,7 +76,7 @@ function cardSets(e) {
 
                 let logo = swshResult[j].logo;
                 let number = swshResult[j].number;
-                let release = swshResult[j].release;
+                // let release = swshResult[j].release;
                 let symbol = swshResult[j].symbol;
 
                 let aDiv1 = document.createElement('div');
@@ -86,7 +86,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -96,7 +96,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -105,6 +105,7 @@ function cardSets(e) {
                 aDiv1.setAttribute('name', "button");
                 setImage.classList.add('card-image');
                 setContent.classList.add('card-content');
+                setNameDiv.classList.add('setName');
                 symbolImg.classList.add('symbolImg');
                 symbolImg.setAttribute('src', symbol);
 
@@ -118,10 +119,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -129,7 +130,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -138,7 +139,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('swshDiv').append(aDiv1);
@@ -192,7 +193,7 @@ function cardSets(e) {
 
                 let logo = smResult[j].logo;
                 let number = smResult[j].number;
-                let release = smResult[j].release;
+                // let release = smResult[j].release;
                 let symbol = smResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -202,7 +203,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -212,7 +213,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -234,10 +235,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -245,7 +246,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -254,7 +255,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
 
@@ -308,7 +309,7 @@ function cardSets(e) {
 
                 let logo = xyResult[j].logo;
                 let number = xyResult[j].number;
-                let release = xyResult[j].release;
+                // let release = xyResult[j].release;
                 let symbol = xyResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -318,7 +319,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -328,7 +329,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -350,10 +351,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -361,7 +362,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -370,7 +371,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('xyDiv').append(aDiv1);
@@ -423,7 +424,7 @@ function cardSets(e) {
 
                 let logo = bwResult[j].logo;
                 let number = bwResult[j].number;
-                let release = bwResult[j].release;
+                // let release = bwResult[j].release;
                 let symbol = bwResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -433,7 +434,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -443,7 +444,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -465,10 +466,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -476,7 +477,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -485,7 +486,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('bwDiv').append(aDiv1);
@@ -539,7 +540,7 @@ function cardSets(e) {
 
                 let logo = callResult[j].logo;
                 let number = callResult[j].number;
-                let release = callResult[j].release;
+                // let release = callResult[j].release;
                 let symbol = callResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -549,7 +550,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -559,7 +560,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -583,10 +584,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -594,7 +595,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -603,7 +604,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('callDiv').append(aDiv1);
@@ -641,7 +642,7 @@ function cardSets(e) {
 
                 let logo = hgssResult[j].logo;
                 let number = hgssResult[j].number;
-                let release = hgssResult[j].release;
+                // let release = hgssResult[j].release;
                 let symbol = hgssResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -651,7 +652,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -661,7 +662,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -683,10 +684,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -694,7 +695,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -703,7 +704,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('hgssDiv').append(aDiv1);
@@ -756,7 +757,7 @@ function cardSets(e) {
 
                 let logo = platResult[j].logo;
                 let number = platResult[j].number;
-                let release = platResult[j].release;
+                // let release = platResult[j].release;
                 let symbol = platResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -766,7 +767,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -776,7 +777,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -798,10 +799,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -809,7 +810,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -818,7 +819,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('platDiv').append(aDiv1);
@@ -871,7 +872,7 @@ function cardSets(e) {
 
                 let logo = popResult[j].logo;
                 let number = popResult[j].number;
-                let release = popResult[j].release;
+                // let release = popResult[j].release;
                 let symbol = popResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -881,7 +882,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -891,7 +892,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -913,10 +914,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -924,7 +925,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -933,7 +934,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('popDiv').append(aDiv1);
@@ -987,7 +988,7 @@ function cardSets(e) {
 
                 let logo = dpResult[j].logo;
                 let number = dpResult[j].number;
-                let release = dpResult[j].release;
+                // let release = dpResult[j].release;
                 let symbol = dpResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -997,7 +998,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -1007,7 +1008,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -1029,10 +1030,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -1040,7 +1041,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -1049,7 +1050,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('dpDiv').append(aDiv1);
@@ -1102,7 +1103,7 @@ function cardSets(e) {
 
                 let logo = rsResult[j].logo;
                 let number = rsResult[j].number;
-                let release = rsResult[j].release;
+                // let release = rsResult[j].release;
                 let symbol = rsResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -1112,7 +1113,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -1122,7 +1123,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -1144,10 +1145,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -1155,7 +1156,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -1164,7 +1165,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('rsDiv').append(aDiv1);
@@ -1217,7 +1218,7 @@ function cardSets(e) {
 
                 let logo = eCardResult[j].logo;
                 let number = eCardResult[j].number;
-                let release = eCardResult[j].release;
+                // let release = eCardResult[j].release;
                 let symbol = eCardResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -1227,7 +1228,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -1237,7 +1238,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -1259,10 +1260,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -1270,7 +1271,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -1279,7 +1280,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('eCardDiv').append(aDiv1);
@@ -1332,7 +1333,7 @@ function cardSets(e) {
 
                 let logo = legendResult[j].logo;
                 let number = legendResult[j].number;
-                let release = legendResult[j].release;
+                // let release = legendResult[j].release;
                 let symbol = legendResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -1342,7 +1343,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -1352,7 +1353,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -1376,10 +1377,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -1387,7 +1388,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -1396,7 +1397,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('legendDiv').append(aDiv1);
@@ -1433,7 +1434,7 @@ function cardSets(e) {
 
                 let logo = neoResult[j].logo;
                 let number = neoResult[j].number;
-                let release = neoResult[j].release;
+                // let release = neoResult[j].release;
                 let symbol = neoResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -1443,7 +1444,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -1453,7 +1454,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -1475,10 +1476,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -1486,7 +1487,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -1495,7 +1496,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('neoDiv').append(aDiv1);
@@ -1548,7 +1549,7 @@ function cardSets(e) {
 
                 let logo = gymResult[j].logo;
                 let number = gymResult[j].number;
-                let release = gymResult[j].release;
+                // let release = gymResult[j].release;
                 let symbol = gymResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -1558,7 +1559,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -1568,7 +1569,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -1590,10 +1591,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -1601,7 +1602,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -1610,7 +1611,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('gymDiv').append(aDiv1);
@@ -1663,7 +1664,7 @@ function cardSets(e) {
 
                 let logo = baseResult[j].logo;
                 let number = baseResult[j].number;
-                let release = baseResult[j].release;
+                // let release = baseResult[j].release;
                 let symbol = baseResult[j].symbol;
 
                 let aDiv1 = document.createElement('a');
@@ -1673,7 +1674,7 @@ function cardSets(e) {
                 let setContent = document.createElement('div');
                 let setNameDiv = document.createElement('div');
                 let setName = document.createElement('p');
-                let setRelease = document.createElement('p');
+                // let setRelease = document.createElement('p');
                 let symbolImg = document.createElement('img');
 
                 let sideDiv1 = document.createElement('div');
@@ -1683,7 +1684,7 @@ function cardSets(e) {
                 let setSideContent = document.createElement('div');
                 let setSideNameDiv = document.createElement('div');
                 let setSideName = document.createElement('p');
-                let setSideRelease = document.createElement('p');
+                // let setSideRelease = document.createElement('p');
                 let symbolSideImg = document.createElement('img');
 
                 logoImg.setAttribute('src', logo);
@@ -1705,10 +1706,10 @@ function cardSets(e) {
                 symbolSideImg.setAttribute('src', symbol);
 
                 setName.innerHTML = number;
-                setRelease.innerHTML = "Released: " + release;
+                // setRelease.innerHTML = "Released: " + release;
 
                 setSideName.innerHTML = number;
-                setSideRelease.innerHTML = "Released: " + release;
+                // setSideRelease.innerHTML = "Released: " + release;
 
                 aDiv1.appendChild(setDiv);
                 setDiv.appendChild(setImage);
@@ -1716,7 +1717,7 @@ function cardSets(e) {
                 setDiv.appendChild(setContent);
                 setContent.appendChild(setNameDiv);
                 setNameDiv.appendChild(setName);
-                setNameDiv.appendChild(setRelease);
+                // setNameDiv.appendChild(setRelease);
                 setNameDiv.appendChild(symbolImg);
 
                 sideDiv1.appendChild(setSideDiv);
@@ -1725,7 +1726,7 @@ function cardSets(e) {
                 setSideDiv.appendChild(setSideContent);
                 setSideContent.appendChild(setSideNameDiv);
                 setSideNameDiv.appendChild(setSideName);
-                setSideNameDiv.appendChild(setSideRelease);
+                // setSideNameDiv.appendChild(setSideRelease);
                 setSideNameDiv.appendChild(symbolSideImg);
 
                 document.getElementById('baseDiv').append(aDiv1);
