@@ -3,15 +3,15 @@ let butID = []
 $(function testing() {
     $(document).on("click", '.card', function () {
         // this.id;
-        $('.initial').show();
+        // $('.initial').show();
         event.preventDefault();
         butID[0] = this.id;
         butID.push(this.id);
         console.log(butID);
         masterCall();
         $('#buttonResults').hide();
-
     });
+    
 });
 
 
@@ -23,6 +23,17 @@ function masterCall() {
 
 function clear(e) {
     document.getElementById("resultsBody").innerHTML = "";
+}
+
+//Toggles from Card Images and Card Spreadsheets
+function sheetToggle() {
+        $('.initial').show();
+        $('.allCards').hide();
+}
+
+function cardListToggle() {
+        $('.initial').hide();
+        $('.allCards').show();
 }
 
 
@@ -56,6 +67,25 @@ function query(e) {
                 }
                 newResult.push(targetResult);
             }
+
+
+        // This creates a button that allows for switching from Card Images to the Card Spreadsheet   
+            let sheetDiv = document.createElement('div');
+            let cardImgDiv = document.createElement('div');
+
+            sheetDiv.classList.add('btn', 'btn-sm', 'btn-primary');
+            cardImgDiv.classList.add('btn', 'btn-sm', 'btn-primary');
+            sheetDiv.id = "sSheet";
+            cardImgDiv.id = "cardList";
+            sheetDiv.innerHTML = "Checklist";
+            cardImgDiv.innerHTML = "Card List";
+
+            document.getElementById('spreadsheetBtn').append(cardImgDiv);
+            document.getElementById('spreadsheetBtn').append(sheetDiv);
+
+            document.getElementById("cardList").addEventListener("click", cardListToggle);
+            document.getElementById("sSheet").addEventListener("click", sheetToggle);
+
 
         // This code will create the Card Images with their names for an entire Set that is clicked on
             newResult.sort((a, b) => (a.number) > (b.number) ? 1 : -1);
