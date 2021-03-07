@@ -1,6 +1,29 @@
 /* Set Cards Styling */
 
 /* Test Card Search Cards */
+.testImg {
+    height: 130px;
+    width: 100px;
+    margin: 10px;
+}
+
+#demo {
+    margin: 0;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.setName {
+    font-size: .75rem;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+}
+
 .setCardImg {
     height: 130px;
     width: 100px;
