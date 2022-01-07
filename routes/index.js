@@ -12,7 +12,7 @@ router.get('/home', ensureAuthenticated, (req, res) =>
   })
 );
 
-router.get('/cardSearch', ensureAuthenticated, (req, res) =>
+router.get('/cardSearch' , ensureAuthenticated, (req, res) =>
   res.render('cardSearch', {
     user: req.user
   })

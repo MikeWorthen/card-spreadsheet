@@ -3,18 +3,48 @@ console.log(butID)
 
 let finalID = []
 console.log(finalID)
+////////////////////////////////////////////////////////////////////////////
+// grabs param from the URL
+
+const search = () => {
+    let params = new URLSearchParams(window.location.search);
+    const name = params.get('name')
+    console.log(name)
+    var val = name;
+    var val = $("input:text").val().toLowerCase();
+    // butID[0] = val;
+    console.log(val)
+    
+    // let newVal = val.replace(/ .*/, '');
+    finalID[0] = name;
+    clearArray();
+    cardSearch();
+}
 
 
+function func(a){	
+    window.location.href = "/test?name=" + a;
+    console.log(a)
+}
+
+window.onload = function(){
+    const params = new URLSearchParams(window.location.search);
+    const paramName = params.get('name')
+    console.log(paramName)
+    search()
+}
+
+
+let test = () => {
+    console.log("I Live!")
+}
+/////////////////////////////////////////////////////////////////////////////
 $(document).ready(function () {
-
+  
     $("button").click(function () {
         event.preventDefault();
-        var val = $("input:text").val().toLowerCase();
-        butID[0] = val;
-        let newVal = val.replace(/ .*/, '');
-        finalID[0] = newVal;
-        clearArray();
-        cardSearch();
+        let a = document.getElementById('cardInput').value
+        func(a)
     });
 
 });
@@ -127,3 +157,5 @@ function cardSearch(e) {
         });
 
 }
+
+// cardSearch();
