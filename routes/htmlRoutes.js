@@ -17,6 +17,11 @@ module.exports = function (app) {
   app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "../app/html/index.html"));
   });
+  app.get("/about", function (req, res) {
+    res.sendFile(path.join(__dirname, "../app/html/about.html"));
+  });
+
+
 
   // app.get("/home", ensureAuthenticated, function (req, res) {
   //   res.sendFile(path.join(__dirname, "../app/html/authIndex.html"));
@@ -35,11 +40,18 @@ module.exports = function (app) {
 
   // Test Page
   app.get("/test", function (req, res) {
+
+    res.sendFile(path.join(__dirname, "../app/html/test.html"));
+  });
+
+  app.get("/test?name=", function (req, res) {
+    
     res.sendFile(path.join(__dirname, "../app/html/test.html"));
   });
 
     // Test2 Page
     app.get("/test2", function (req, res) {
+
       res.sendFile(path.join(__dirname, "../app/html/test2.html"));
     });
   

@@ -17,6 +17,12 @@ function clearArray(e) {
     butID = [];
 }
 
+
+// url param
+//  buton ID
+// render new page with searched cards. 
+
+
 function cardSearch(e) {
 
 let queryURLSearch = "https://api.pokemontcg.io/v1/cards?name=" + butID[0];

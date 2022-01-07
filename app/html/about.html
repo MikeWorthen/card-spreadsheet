@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/adb19d7eeb.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <!-- External CSS -->
+  <link rel="stylesheet" type="text/css" href="about.css" />
+  <title>Kanto Collectors - Trade bigger - better - faster</title>
+</head>
+
+<body id="home">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">More</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Subscribe</a>
+            <a class="dropdown-item" href="#">Login</a>
+          </div>
+        </li>
+      </ul>
+      <div class="sign-up-links">
+        <a class="nav-link" data-toggle="modal" data-target="#signUpModal" href="#">Subscribe
+        </a>
+        <a class="nav-link" href="#">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sign-up modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title" id="exampleModalLabel">Subscribe To our free newsletter</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="/subscribe/add" method="POST">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" name="subscriber_email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <button type="submit" value="Subscribe" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $("#myModal").on("shown.bs.modal", function () {
+      $("#myInput").trigger("focus");
+    });
+  </script>
+  <!--  -->
+
+  <section class="section-a">
+    <div class="container">
+      <div>
+        <h1>Your personal Trading companion</h1>
+        <p>
+          We created this site to make card trading more accesible for new traders and experienced traders alike! Click below to find our just what out site is all about.
+        </p>
+        <a href="/about" class="default-btn">Read More</a>
+      </div>
+      <img src="pokeball.png" alt="img" />
+    </div>
+  </section>
+
+  <!-- overlay text -->
+
+  <section class="section-b">
+    <div class="overlay background-section-b">
+      <div class="section-b-inner">
+        <h3>Trade Better</h3>
+        <h2>Community driven data</h2>
+        <p>
+         We use the data gatherd on our site to track which cards are gaining popularity. We then display that information so that you can easily see just what your community is searching.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-c -->
+  <section class="section-c">
+    <div class="container">
+      <div class="section-c-inner">
+        <h1>It's Free!</h1>
+        <p>
+          The best part about our site is that its free for you to use. We
+          beleive in making card trading more accesible to everyone. We want
+          to be part of bringing card trading back into the mainstream. If you have been thinking about taking a leap into the card trading world this is the place to start.
+        </p>
+      </div>
+
+      <div class="section-c-inner">
+        <h1>Maximize your trading potential</h1>
+        <p>
+          With our website you can take your card trading to the next level.
+          We use your data to track the populartiy of cards that are bneing
+          searched and then show you the real data so you can make more
+          accurate predictions and purchases.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section-footer">
+    <div class="container">
+      <div>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <a href="http://twitter.com">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="http://facebook.com">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/sd_card_collecting/" target="none">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </div>
+      <div>
+        <h3>Company Info</h3>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Blog Posts</h3>
+        <ul>
+          <li><a href="#">Lorem, ipsum dolor.</a></li>
+          <li><a href="#">Lorem, ipsum dolor.</a></li>
+          <li><a href="#">Lorem, ipsum dolor.</a></li>
+          <li><a href="#">Lorem, ipsum dolor.</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Subscribe</h3>
+        <p>Take advantage of our monthly news letter.</p>
+        <form action="/subscribe/add" method="POST">
+          <div class="email-form">
+            <span class="form-control-wrap">
+              <input type="email" name="subscriber_email" id="email" size="40" class="form-control" placeholder="email" />
+            </span>
+            <button type="submit" value="Subscribe" class="form-control submit">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
