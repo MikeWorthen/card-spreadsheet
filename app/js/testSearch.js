@@ -31,7 +31,14 @@ window.onload = function(){
     const params = new URLSearchParams(window.location.search);
     const paramName = params.get('name')
     console.log(paramName)
-    search()
+    
+     
+    if(paramName === null){
+        return; 
+    }else{
+        search()
+    }
+
 }
 
 
